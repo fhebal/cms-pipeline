@@ -5,6 +5,8 @@ The purpose of this project is to develop and deploy a scalable system for the d
 * Connecting to databases, analyzing the data and deriving valuable insights using Spark
 * Build, train machine learning models and deploy them into production environment
 
+![Image of ML Pipeline](https://github.com/fhebal/cms-pipeline/blob/master/ml_pipeline.png)
+
 ## Project goals (MSDS 436 - Course Objectives)
 * Select appropriate infrastructure for large data processing, storage and analytics
 * Process data and architect an end-to-end pipeline in a cloud environment
@@ -16,34 +18,6 @@ The purpose of this project is to develop and deploy a scalable system for the d
 ## Software objectives
 * Modular: components are modular/isolated to ensure use-case/stack flexibility
 * Automated: maximal steps from ingestion to deployment are automated
-* Cloud agnostic: all pipeline components should work in gcp, aws, and azure
 * Modern stack: Technology must be modern, useful, and widely adopted
-* Robust CI/CD: adheres to cs best practices, jira/github integrated development
-* Versioned Data Science lifecycle: catalogue datasets, models, and performance metadata for experimentation
 
-![Image of ML Pipeline](https://github.com/fhebal/cms-pipeline/blob/master/ml_pipeline.png)
 
-## Design documentation
-Ingest:
-* Avoid data loss
-* Automate ingestion with configurable yaml file
-* Data profiling must be implemented to assert expected output
-* Robust testing must be implemented to confirm successful execution
-* New data should trigger ingestion process, evaluation of differences (pachyderm?)
-* Detect changes to incoming data (e.g. format, etc..)
-
-Process:
-* Automate processing with configurable yaml file
-* Data mapping should be compiled for any structural transformations
-* Avoid intermediary structures 
-
-Store:
-* Maintain flexible storage options
-* Storage should follow use case e.g. json for web, parquet for analytics
-* SQL queries should be stored outside code somewhere sensible and easily accessible
-
-Analytics:
-* cron job to retrain model
-
-Deploy:
-* 

@@ -36,8 +36,7 @@ RUN apt-get update && \
     rm -r /root/.cache/pip
 
 # install aws cli and set api keys
-RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o
-"awscliv2.zip"
+RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 RUN cd ~
 RUN unzip awscliv2.zip && \
     sudo ./aws/install

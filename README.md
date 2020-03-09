@@ -21,7 +21,7 @@ The purpose of this project is to develop and deploy a scalable system for the d
 * Robust CI/CD: adheres to cs best practices, jira/github integrated development
 * Versioned Data Science lifecycle: catalogue datasets, models, and performance metadata for experimentation
 
-![Image of ML Pipeline](https://github.com/fhebal/cms-pipeline/ml_pipeline.png)
+![Image of ML Pipeline](https://github.com/fhebal/cms-pipeline/blob/master/ml_pipeline.png)
 
 ## Design documentation
 Ingest:

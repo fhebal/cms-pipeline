@@ -1,0 +1,104 @@
+--Create schema--
+drop schema if exists cms cascade;
+create schema cms authorization awsuser;
+
+drop table if exists cms.beneficiary_summary;
+drop table if exists cms.inpatient_claims;
+drop table if exists cms.outpatient_claims;
+drop table if exists cms.prescription_drug_events;
+
+--Beneficiary Summary--
+create table cms.beneficiary_summary (DESYNPUF_ID varchar, BENE_BIRTH_DT date, BENE_DEATH_DT date, BENE_SEX_IDENT_CD int2,
+       BENE_RACE_CD int2, BENE_ESRD_IND varchar, SP_STATE_CODE int2, BENE_COUNTY_CD int2,
+       BENE_HI_CVRAGE_TOT_MONS int2, BENE_SMI_CVRAGE_TOT_MONS int2,
+       BENE_HMO_CVRAGE_TOT_MONS int2, PLAN_CVRG_MOS_NUM int2, SP_ALZHDMTA int2,
+       SP_CHF int2, SP_CHRNKIDN int2, SP_CNCR int2, SP_COPD int2, SP_DEPRESSN int2,
+       SP_DIABETES int2, SP_ISCHMCHT int2, SP_OSTEOPRS int2, SP_RA_OA int2, SP_STRKETIA int2,
+       MEDREIMB_IP float, BENRES_IP float, PPPYMT_IP float, MEDREIMB_OP float, BENRES_OP float,
+       PPPYMT_OP float, MEDREIMB_CAR float, BENRES_CAR float, PPPYMT_CAR float);
+
+--Inpatient Claims--
+create table cms.inpatient_claims (DESYNPUF_ID varchar, CLM_ID int8, SEGMENT int2, CLM_FROM_DT date, CLM_THRU_DT date,
+       PRVDR_NUM varchar, CLM_PMT_AMT float, NCH_PRMRY_PYR_CLM_PD_AMT float, AT_PHYSN_NPI varchar,
+       OP_PHYSN_NPI varchar, OT_PHYSN_NPI varchar, CLM_ADMSN_DT date, ADMTNG_ICD9_DGNS_CD varchar,
+       CLM_PASS_THRU_PER_DIEM_AMT float, NCH_BENE_IP_DDCTBL_AMT float,
+       NCH_BENE_PTA_COINSRNC_LBLTY_AM float, NCH_BENE_BLOOD_DDCTBL_LBLTY_AM float,
+       CLM_UTLZTN_DAY_CNT int, NCH_BENE_DSCHRG_DT date, CLM_DRG_CD varchar,
+       ICD9_DGNS_CD_1 varchar, ICD9_DGNS_CD_2 varchar, ICD9_DGNS_CD_3 varchar, ICD9_DGNS_CD_4 varchar,
+       ICD9_DGNS_CD_5 varchar, ICD9_DGNS_CD_6 varchar, ICD9_DGNS_CD_7 varchar, ICD9_DGNS_CD_8 varchar,
+       ICD9_DGNS_CD_9 varchar, ICD9_DGNS_CD_10 varchar, ICD9_PRCDR_CD_1 varchar,
+       ICD9_PRCDR_CD_2 varchar, ICD9_PRCDR_CD_3 varchar, ICD9_PRCDR_CD_4 varchar,
+       ICD9_PRCDR_CD_5 varchar, ICD9_PRCDR_CD_6 varchar, HCPCS_CD_1 varchar, HCPCS_CD_2 varchar,
+       HCPCS_CD_3 varchar, HCPCS_CD_4 varchar, HCPCS_CD_5 varchar, HCPCS_CD_6 varchar, HCPCS_CD_7 varchar,
+       HCPCS_CD_8 varchar, HCPCS_CD_9 varchar, HCPCS_CD_10 varchar, HCPCS_CD_11 varchar, HCPCS_CD_12 varchar,
+       HCPCS_CD_13 varchar, HCPCS_CD_14 varchar, HCPCS_CD_15 varchar, HCPCS_CD_16 varchar,
+       HCPCS_CD_17 varchar, HCPCS_CD_18 varchar, HCPCS_CD_19 varchar, HCPCS_CD_20 varchar,
+       HCPCS_CD_21 varchar, HCPCS_CD_22 varchar, HCPCS_CD_23 varchar, HCPCS_CD_24 varchar,
+       HCPCS_CD_25 varchar, HCPCS_CD_26 varchar, HCPCS_CD_27 varchar, HCPCS_CD_28 varchar,
+       HCPCS_CD_29 varchar, HCPCS_CD_30 varchar, HCPCS_CD_31 varchar, HCPCS_CD_32 varchar,
+       HCPCS_CD_33 varchar, HCPCS_CD_34 varchar, HCPCS_CD_35 varchar, HCPCS_CD_36 varchar,
+       HCPCS_CD_37 varchar, HCPCS_CD_38 varchar, HCPCS_CD_39 varchar, HCPCS_CD_40 varchar,
+       HCPCS_CD_41 varchar, HCPCS_CD_42 varchar, HCPCS_CD_43 varchar, HCPCS_CD_44 varchar,
+       HCPCS_CD_45 varchar);
+
+--Outpatient Claims--
+create table cms.outpatient_claims (DESYNPUF_ID varchar, CLM_ID int8, SEGMENT int2, CLM_FROM_DT date, CLM_THRU_DT date,
+       PRVDR_NUM varchar, CLM_PMT_AMT float, NCH_PRMRY_PYR_CLM_PD_AMT float, AT_PHYSN_NPI varchar,
+       OP_PHYSN_NPI varchar, OT_PHYSN_NPI varchar, NCH_BENE_BLOOD_DDCTBL_LBLTY_AM float,
+       ICD9_DGNS_CD_1 varchar, ICD9_DGNS_CD_2 varchar, ICD9_DGNS_CD_3 varchar, ICD9_DGNS_CD_4 varchar,
+       ICD9_DGNS_CD_5 varchar, ICD9_DGNS_CD_6 varchar, ICD9_DGNS_CD_7 varchar, ICD9_DGNS_CD_8 varchar,
+       ICD9_DGNS_CD_9 varchar, ICD9_DGNS_CD_10 varchar, ICD9_PRCDR_CD_1 varchar,
+       ICD9_PRCDR_CD_2 varchar, ICD9_PRCDR_CD_3 varchar, ICD9_PRCDR_CD_4 varchar,
+       ICD9_PRCDR_CD_5 varchar, ICD9_PRCDR_CD_6 varchar, NCH_BENE_PTB_DDCTBL_AMT float,
+       NCH_BENE_PTB_COINSRNC_AMT float, ADMTNG_ICD9_DGNS_CD varchar, HCPCS_CD_1 varchar,
+       HCPCS_CD_2 varchar, HCPCS_CD_3 varchar, HCPCS_CD_4 varchar, HCPCS_CD_5 varchar, HCPCS_CD_6 varchar,
+       HCPCS_CD_7 varchar, HCPCS_CD_8 varchar, HCPCS_CD_9 varchar, HCPCS_CD_10 varchar, HCPCS_CD_11 varchar,
+       HCPCS_CD_12 varchar, HCPCS_CD_13 varchar, HCPCS_CD_14 varchar, HCPCS_CD_15 varchar,
+       HCPCS_CD_16 varchar, HCPCS_CD_17 varchar, HCPCS_CD_18 varchar, HCPCS_CD_19 varchar,
+       HCPCS_CD_20 varchar, HCPCS_CD_21 varchar, HCPCS_CD_22 varchar, HCPCS_CD_23 varchar,
+       HCPCS_CD_24 varchar, HCPCS_CD_25 varchar, HCPCS_CD_26 varchar, HCPCS_CD_27 varchar,
+       HCPCS_CD_28 varchar, HCPCS_CD_29 varchar, HCPCS_CD_30 varchar, HCPCS_CD_31 varchar,
+       HCPCS_CD_32 varchar, HCPCS_CD_33 varchar, HCPCS_CD_34 varchar, HCPCS_CD_35 varchar,
+       HCPCS_CD_36 varchar, HCPCS_CD_37 varchar, HCPCS_CD_38 varchar, HCPCS_CD_39 varchar,
+       HCPCS_CD_40 varchar, HCPCS_CD_41 varchar, HCPCS_CD_42 varchar, HCPCS_CD_43 varchar,
+       HCPCS_CD_44 varchar, HCPCS_CD_45 varchar);
+       
+--Prescription Drug Events--
+create table cms.prescription_drug_events (DESYNPUF_ID varchar, PDE_ID int8, SRVC_DT date, PROD_SRVC_ID varchar, QTY_DSPNSD_NUM int,
+       DAYS_SUPLY_NUM int, PTNT_PAY_AMT float, TOT_RX_CST_AMT float);
+
+--ML Predictions on Annual Cost--
+create table cms.annual_cost_predictions (ANNUAL_COST float, PATIENT_ID varchar, AGE_YRS float, GENDER int2, RACE int2, STATE int2, DX int,
+       PX int, HCPCS int, SP_ALZHDMTA int2, SP_CHF int2, SP_CHRNKIDN int2, SP_CNCR int2,
+       SP_COPD int2, SP_DEPRESSN int2, SP_DIABETES int2, SP_ISCHMCHT int2, SP_OSTEOPRS int2,
+       SP_RA_OA int2, SP_STRKETIA int2, GENDER_index float, RACE_index float, STATE_index float,
+       SP_ALZHDMTA_index float, SP_CHF_index float, SP_CHRNKIDN_index float,
+       SP_CNCR_index float, SP_COPD_index float, SP_DEPRESSN_index float,
+       SP_DIABETES_index float, SP_ISCHMCHT_index float, SP_OSTEOPRS_index float,
+       SP_RA_OA_index float, SP_STRKETIA_index float, features varchar, prediction float)
+
+--Copy Commands into Redshift--
+copy cms.beneficiary_summary
+from 's3://cms-data-1/Beneficiary_Summary/'
+IAM_ROLE 'arn:aws:iam::799687528413:role/RedshiftDWS3FullAccess'
+FORMAT AS PARQUET;
+
+copy cms.inpatient_claims
+from 's3://cms-data-1/Inpatient_Claims/'
+IAM_ROLE 'arn:aws:iam::799687528413:role/RedshiftDWS3FullAccess'
+FORMAT AS PARQUET;
+
+copy cms.outpatient_claims
+from 's3://cms-data-1/Outpatient_Claims/'
+IAM_ROLE 'arn:aws:iam::799687528413:role/RedshiftDWS3FullAccess'
+FORMAT AS PARQUET;
+
+copy cms.prescription_drug_events
+from 's3://cms-data-1/Prescription_Drug_Events/'
+IAM_ROLE 'arn:aws:iam::799687528413:role/RedshiftDWS3FullAccess'
+FORMAT AS PARQUET;
+
+copy cms.annual_cost_predictions
+from 's3://cms-data-1/Annual_Cost_Predictions/'
+IAM_ROLE 'arn:aws:iam::799687528413:role/RedshiftDWS3FullAccess'
+FORMAT AS PARQUET;

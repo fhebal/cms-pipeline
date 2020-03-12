@@ -1,0 +1,51 @@
+# Copy commands for Lambda functions to insert data into Redshift
+
+Beneficiary Summary
+set search_path to cms; 
+begin; 
+delete from cms.beneficiary_summary; 
+copy cms.beneficiary_summary 
+from 's3://cms-data-1/Beneficiary_Summary/' 
+IAM_ROLE 'arn:aws:iam::799687528413:role/RedshiftDWS3FullAccess' 
+FORMAT AS PARQUET; 
+commit;
+
+Inpatient Claims
+set search_path to cms; 
+begin; 
+delete from cms.inpatient_claims; 
+copy cms.inpatient_claims 
+from 's3://cms-data-1/Inpatient_Claims/' 
+IAM_ROLE 'arn:aws:iam::799687528413:role/RedshiftDWS3FullAccess' 
+FORMAT AS PARQUET; 
+commit;
+
+Outpatient Claims
+set search_path to cms; 
+begin; 
+delete from cms.outpatient_claims; 
+copy cms.outpatient_claims 
+from 's3://cms-data-1/Outpatient_Claims/' 
+IAM_ROLE 'arn:aws:iam::799687528413:role/RedshiftDWS3FullAccess' 
+FORMAT AS PARQUET; 
+commit;
+
+Prescription Drug Events
+set search_path to cms; 
+begin; 
+delete from cms.prescription_drug_events; 
+copy cms.prescription_drug_events 
+from 's3://cms-data-1/Prescription_Drug_Events/' 
+IAM_ROLE 'arn:aws:iam::799687528413:role/RedshiftDWS3FullAccess' 
+FORMAT AS PARQUET; 
+commit;
+
+Annual Cost Predictions
+set search_path to cms; 
+begin; 
+delete from cms.annual_cost_predictions; 
+copy cms.annual_cost_predictions 
+from 's3://cms-data-1/Annual_Cost_Predictions/' 
+IAM_ROLE 'arn:aws:iam::799687528413:role/RedshiftDWS3FullAccess' 
+FORMAT AS PARQUET; 
+commit;

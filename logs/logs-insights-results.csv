@@ -1,0 +1,909 @@
+@log,@timestamp,@message
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 07:30:40.859,"END RequestId: c0931a68-9c96-4870-a062-2d70ba627f58
+"
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 07:30:40.859,"REPORT RequestId: c0931a68-9c96-4870-a062-2d70ba627f58	Duration: 2290.32 ms	Billed Duration: 2300 ms	Memory Size: 128 MB	Max Memory Used: 87 MB	Init Duration: 282.24 ms	
+"
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 07:30:40.838,"Stopped Instance ID ['i-0eb9a408ec2b491c8']
+"
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 07:30:38.568,"START RequestId: c0931a68-9c96-4870-a062-2d70ba627f58 Version: $LATEST
+"
+799687528413:cms-annual-cost-predictions,2020-03-11 07:30:37.352,Predictions processed in 0:31:09.332210
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 07:04:29.661,"REPORT RequestId: 71a76e7a-7786-444a-bcc6-167187b156ca	Duration: 423941.84 ms	Billed Duration: 424000 ms	Memory Size: 128 MB	Max Memory Used: 112 MB	Init Duration: 632.95 ms	
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 07:04:29.642,"END RequestId: 71a76e7a-7786-444a-bcc6-167187b156ca
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 06:59:19.501,"Executing sudo service docker start &&
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 06:59:19.501,"        sudo docker run -it ff572cbb6282 python3 /model/pyspark_model.py /bin/bash
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 06:59:19.452,"Connected to 18.234.139.184
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 06:58:58.222,"Downloading key
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 06:57:27.802,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 06:57:25.700,"START RequestId: 71a76e7a-7786-444a-bcc6-167187b156ca Version: $LATEST
+"
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 06:47:23.478,"END RequestId: 7892f25e-513b-4bcf-8753-2b19eaf6cef8
+"
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 06:47:23.478,"REPORT RequestId: 7892f25e-513b-4bcf-8753-2b19eaf6cef8	Duration: 2117.74 ms	Billed Duration: 2200 ms	Memory Size: 128 MB	Max Memory Used: 87 MB	Init Duration: 265.55 ms	
+"
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 06:47:23.438,"Stopped Instance ID ['i-0eb9a408ec2b491c8']
+"
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 06:47:21.341,"START RequestId: 7892f25e-513b-4bcf-8753-2b19eaf6cef8 Version: $LATEST
+"
+799687528413:cms-annual-cost-predictions,2020-03-11 06:47:19.258,Predictions processed in 0:31:00.285525
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 04:44:49.685,"END RequestId: 1ea04def-4591-4a69-a3b7-cdbfb24d0590
+"
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 04:44:49.685,"REPORT RequestId: 1ea04def-4591-4a69-a3b7-cdbfb24d0590	Duration: 2069.56 ms	Billed Duration: 2100 ms	Memory Size: 128 MB	Max Memory Used: 87 MB	Init Duration: 269.51 ms	
+"
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 04:44:49.645,"Stopped Instance ID ['i-0eb9a408ec2b491c8']
+"
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 04:44:47.596,"START RequestId: 1ea04def-4591-4a69-a3b7-cdbfb24d0590 Version: $LATEST
+"
+799687528413:cms-annual-cost-predictions,2020-03-11 04:44:45.707,Predictions processed in 0:29:42.858584
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 04:16:25.263,"END RequestId: 59f3ba7b-0b31-44c9-8947-b4a8ac5d3e5c
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 04:16:25.263,"REPORT RequestId: 59f3ba7b-0b31-44c9-8947-b4a8ac5d3e5c	Duration: 103545.75 ms	Billed Duration: 103600 ms	Memory Size: 128 MB	Max Memory Used: 97 MB	Init Duration: 525.13 ms	
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 04:14:55.074,"Connected to 3.91.53.15
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 04:14:43.965,"Downloading key
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 04:14:43.602,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 04:14:41.697,"START RequestId: 59f3ba7b-0b31-44c9-8947-b4a8ac5d3e5c Version: $LATEST
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 04:09:38.461,"END RequestId: 72d82a7d-9b59-4b30-9d11-1a7572eef254
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 04:09:38.461,"REPORT RequestId: 72d82a7d-9b59-4b30-9d11-1a7572eef254	Duration: 13534.43 ms	Billed Duration: 13600 ms	Memory Size: 128 MB	Max Memory Used: 97 MB	Init Duration: 558.08 ms	
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 04:09:38.441,"[ERROR] AttributeError: 'str' object has no attribute 'write'Traceback (most recent call last):  File ""/var/task/startsparkml.py"", line 45, in lambda_handler    sudo_pw = getpass.getpass(""sudo pw for %s: "" % instance_ip, instance_ip)  File ""/var/lang/lib/python3.7/getpass.py"", line 91, in unix_getpass    passwd = fallback_getpass(prompt, stream)  File ""/var/lang/lib/python3.7/getpass.py"", line 125, in fallback_getpass    print(""Warning: Password input may be echoed."", file=stream)
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 04:09:38.362,"/var/lang/lib/python3.7/getpass.py:91: GetPassWarning: Can not control echo on the terminal.
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 04:09:38.362,"  passwd = fallback_getpass(prompt, stream)
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 04:09:38.361,"Connected to 3.91.53.15
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 04:09:27.280,"Downloading key
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 04:09:26.861,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 04:09:24.907,"START RequestId: 72d82a7d-9b59-4b30-9d11-1a7572eef254 Version: $LATEST
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 04:01:58.266,"END RequestId: b50ae4d4-e22c-4351-868c-9130a7504ede
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 04:01:58.266,"REPORT RequestId: b50ae4d4-e22c-4351-868c-9130a7504ede	Duration: 13453.26 ms	Billed Duration: 13500 ms	Memory Size: 128 MB	Max Memory Used: 97 MB	Init Duration: 617.27 ms	
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 04:01:58.246,"sudo pw for 3.91.53.15: [ERROR] EOFErrorTraceback (most recent call last):  File ""/var/task/startsparkml.py"", line 45, in lambda_handler    sudo_pw = getpass.getpass(""sudo pw for %s: "" % instance_ip)  File ""/var/lang/lib/python3.7/getpass.py"", line 91, in unix_getpass    passwd = fallback_getpass(prompt, stream)  File ""/var/lang/lib/python3.7/getpass.py"", line 126, in fallback_getpass    return _raw_input(prompt, stream)  File ""/var/lang/lib/python3.7/getpass.py"", line 148, in _raw_input    raise EOFError
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 04:01:58.169,"/var/lang/lib/python3.7/getpass.py:91: GetPassWarning: Can not control echo on the terminal.
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 04:01:58.169,"  passwd = fallback_getpass(prompt, stream)
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 04:01:58.169,"Warning: Password input may be echoed.
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 04:01:58.168,"Connected to 3.91.53.15
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 04:01:47.086,"Downloading key
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 04:01:46.746,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 04:01:44.794,"START RequestId: b50ae4d4-e22c-4351-868c-9130a7504ede Version: $LATEST
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:59:36.312,"END RequestId: 6350c154-ce8d-46dc-88ef-27f5107cb7be
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:59:36.312,"REPORT RequestId: 6350c154-ce8d-46dc-88ef-27f5107cb7be	Duration: 13452.43 ms	Billed Duration: 13500 ms	Memory Size: 128 MB	Max Memory Used: 97 MB	Init Duration: 504.19 ms	
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:59:36.291,"[ERROR] NameError: name 'getpass' is not definedTraceback (most recent call last):  File ""/var/task/startsparkml.py"", line 44, in lambda_handler    sudo_pw = getpass.getpass(""sudo pw for %s: "" % instance_ip)
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:59:36.270,"Connected to 3.91.53.15
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:59:25.211,"Downloading key
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:59:24.812,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:59:22.859,"START RequestId: 6350c154-ce8d-46dc-88ef-27f5107cb7be Version: $LATEST
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:50:46.549,"END RequestId: 269c74f6-5c58-492d-8b97-974b975fb82b
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:50:46.549,"REPORT RequestId: 269c74f6-5c58-492d-8b97-974b975fb82b	Duration: 113499.64 ms	Billed Duration: 113500 ms	Memory Size: 128 MB	Max Memory Used: 97 MB	Init Duration: 520.62 ms	
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:49:16.409,"Executing sudo docker run -it dd7b147c756b python3 /model/pyspark_model.py /bin/bash
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:49:16.408,"Executing sudo service docker start
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:49:16.348,"Connected to 3.91.53.15
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:48:55.290,"Downloading key
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:48:54.968,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:48:53.029,"START RequestId: 269c74f6-5c58-492d-8b97-974b975fb82b Version: $LATEST
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:43:47.743,"REPORT RequestId: 4937d729-bf1a-43df-b52c-4faf7b65fdfc	Duration: 113473.03 ms	Billed Duration: 113500 ms	Memory Size: 128 MB	Max Memory Used: 97 MB	Init Duration: 512.93 ms	
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:43:47.724,"END RequestId: 4937d729-bf1a-43df-b52c-4faf7b65fdfc
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:42:17.587,"Executing sudo bash -c docker run -it dd7b147c756b python3 /model/pyspark_model.py /bin/bash
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:42:17.535,"Connected to 3.91.53.15
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:42:17.535,"Executing sudo bash -c service docker start
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:41:56.464,"Downloading key
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:41:56.124,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:41:54.251,"START RequestId: 4937d729-bf1a-43df-b52c-4faf7b65fdfc Version: $LATEST
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:30:50.379,"END RequestId: 6915196d-2656-4b06-8b3e-0fa137fa8507
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:30:50.379,"REPORT RequestId: 6915196d-2656-4b06-8b3e-0fa137fa8507	Duration: 113616.90 ms	Billed Duration: 113700 ms	Memory Size: 128 MB	Max Memory Used: 97 MB	Init Duration: 505.53 ms	
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:29:20.247,"Executing sudo docker run -it dd7b147c756b python3 /model/pyspark_model.py /bin/bash
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:29:20.180,"Connected to 3.91.53.15
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:29:20.180,"Executing sudo service docker start
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:28:59.059,"Downloading key
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:28:58.717,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:28:56.761,"START RequestId: 6915196d-2656-4b06-8b3e-0fa137fa8507 Version: $LATEST
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:22:02.735,"REPORT RequestId: 482baa0d-9c2b-476a-89c7-a171eb9b1e1b	Duration: 113424.01 ms	Billed Duration: 113500 ms	Memory Size: 128 MB	Max Memory Used: 97 MB	Init Duration: 489.89 ms	
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:22:02.734,"END RequestId: 482baa0d-9c2b-476a-89c7-a171eb9b1e1b
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:20:32.604,"Executing sudo docker run -it dd7b147c756b python3 pyspark_model.py bash
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:20:32.553,"Connected to 3.91.53.15
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:20:32.553,"Executing sudo service docker start
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:20:11.435,"Downloading key
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:20:11.114,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:20:09.310,"START RequestId: 482baa0d-9c2b-476a-89c7-a171eb9b1e1b Version: $LATEST
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:12:31.065,"REPORT RequestId: 0a1c3cca-6101-4692-8a9e-928becdab803	Duration: 113668.68 ms	Billed Duration: 113700 ms	Memory Size: 128 MB	Max Memory Used: 112 MB	Init Duration: 650.67 ms	
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:12:31.046,"END RequestId: 0a1c3cca-6101-4692-8a9e-928becdab803
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:11:00.865,"Executing /home/ec2-user/sparkml.sh
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:11:00.788,"Connected to 3.91.53.15
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:11:00.788,"Executing chmod 700 /home/ec2-user/sparkml.sh
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:10:39.703,"Downloading key
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:10:39.384,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 03:10:37.376,"START RequestId: 0a1c3cca-6101-4692-8a9e-928becdab803 Version: $LATEST
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:55:01.716,"END RequestId: 366a1170-37d7-4b3d-849d-5848c6a268dd
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:55:01.716,"REPORT RequestId: 366a1170-37d7-4b3d-849d-5848c6a268dd	Duration: 21287.35 ms	Billed Duration: 21300 ms	Memory Size: 128 MB	Max Memory Used: 99 MB	
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:55:01.616,"Executing /home/ec2-user/sparkml.sh
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:55:01.566,"Connected to 3.91.53.15
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:55:01.566,"Executing chmod 700 /home/ec2-user/sparkml.sh
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:54:40.978,"Downloading key
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:54:40.616,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:54:40.406,"START RequestId: 366a1170-37d7-4b3d-849d-5848c6a268dd Version: $LATEST
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:49:56.913,"REPORT RequestId: f74be6d1-7a15-4bca-b61f-ff696a256c41	Duration: 23582.89 ms	Billed Duration: 23600 ms	Memory Size: 128 MB	Max Memory Used: 97 MB	Init Duration: 521.45 ms	
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:49:56.894,"END RequestId: f74be6d1-7a15-4bca-b61f-ff696a256c41
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:49:56.820,"Executing /home/ec2-user/sparkml.sh
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:49:56.766,"Connected to 3.91.53.15
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:49:56.766,"Executing chmod 700 /home/ec2-user/sparkml.sh
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:49:35.636,"Downloading key
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:49:35.274,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:49:33.311,"START RequestId: f74be6d1-7a15-4bca-b61f-ff696a256c41 Version: $LATEST
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:47:16.389,"REPORT RequestId: 742121ab-b80f-4ffd-8b77-97bf85261890	Duration: 423837.50 ms	Billed Duration: 423900 ms	Memory Size: 128 MB	Max Memory Used: 112 MB	Init Duration: 632.82 ms	
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:47:16.388,"END RequestId: 742121ab-b80f-4ffd-8b77-97bf85261890
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:43:34.509,"END RequestId: 17833c34-5344-4a1a-b056-e9488324acfd
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:43:34.509,"REPORT RequestId: 17833c34-5344-4a1a-b056-e9488324acfd	Duration: 421393.32 ms	Billed Duration: 421400 ms	Memory Size: 128 MB	Max Memory Used: 114 MB	
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:42:06.264,"Executing /home/ec2-user/sparkml.sh
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:42:06.204,"Connected to 3.91.53.15
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:42:06.204,"Executing chmod 700 /home/ec2-user/sparkml.sh
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:41:44.986,"Downloading key
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:40:14.644,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:40:12.546,"START RequestId: 742121ab-b80f-4ffd-8b77-97bf85261890 Version: $LATEST
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:38:24.368,"Executing /home/ec2-user/sparkml.sh
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:38:24.319,"Connected to 3.91.53.15
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:38:24.319,"Executing chmod 700 /home/ec2-user/sparkml.sh
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:38:03.670,"Downloading key
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:36:33.291,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:36:33.114,"START RequestId: 17833c34-5344-4a1a-b056-e9488324acfd Version: $LATEST
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:32:51.830,"END RequestId: 9573e844-0259-412d-8e46-a26df145d210
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:32:51.830,"REPORT RequestId: 9573e844-0259-412d-8e46-a26df145d210	Duration: 424597.90 ms	Billed Duration: 424600 ms	Memory Size: 128 MB	Max Memory Used: 112 MB	Init Duration: 660.62 ms	
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:27:41.669,"Executing /home/ec2-user/sparkml.sh
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:27:41.618,"Connected to 3.91.53.15
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:27:41.618,"Executing chmod 700 /home/ec2-user/sparkml.sh
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:27:19.729,"Downloading key
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:25:49.330,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:25:47.232,"START RequestId: 9573e844-0259-412d-8e46-a26df145d210 Version: $LATEST
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:14:38.485,"REPORT RequestId: c05c44fd-70ba-477f-b7b9-5a9253b9ace1	Duration: 423978.40 ms	Billed Duration: 424000 ms	Memory Size: 128 MB	Max Memory Used: 112 MB	Init Duration: 652.81 ms	
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:14:38.466,"END RequestId: c05c44fd-70ba-477f-b7b9-5a9253b9ace1
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:09:28.303,"Executing /home/ec2-user/sparkml.sh
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:09:28.248,"Connected to 3.91.53.15
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:09:28.248,"Executing chmod 700 /home/ec2-user/sparkml.sh
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:09:07.023,"Downloading key
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:07:36.583,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 02:07:34.485,"START RequestId: c05c44fd-70ba-477f-b7b9-5a9253b9ace1 Version: $LATEST
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:49:25.130,"END RequestId: 3067e4f9-4594-407c-90dc-af4beb904bb6
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:49:25.130,"REPORT RequestId: 3067e4f9-4594-407c-90dc-af4beb904bb6	Duration: 423934.36 ms	Billed Duration: 424000 ms	Memory Size: 128 MB	Max Memory Used: 112 MB	Init Duration: 656.02 ms	
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:48:54.166,"END RequestId: 104fcd7a-8311-4a6b-a57f-67d8c20e46d8
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:48:54.166,"REPORT RequestId: 104fcd7a-8311-4a6b-a57f-67d8c20e46d8	Duration: 421330.07 ms	Billed Duration: 421400 ms	Memory Size: 128 MB	Max Memory Used: 115 MB	
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:44:14.989,"Executing /home/ec2-user/sparkml.sh
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:44:14.935,"Connected to 54.237.137.92
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:44:14.935,"Executing chmod 700 /home/ec2-user/sparkml.sh
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:43:53.708,"Downloading key
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:43:43.995,"Executing /home/ec2-user/sparkml.sh
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:43:43.941,"Connected to 54.237.137.92
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:43:43.941,"Executing chmod 700 /home/ec2-user/sparkml.sh
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:43:23.343,"Downloading key
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:42:23.308,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:42:21.194,"START RequestId: 3067e4f9-4594-407c-90dc-af4beb904bb6 Version: $LATEST
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:41:53.063,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:41:52.811,"START RequestId: 104fcd7a-8311-4a6b-a57f-67d8c20e46d8 Version: $LATEST
+"
+799687528413:/aws/lambda/start-sparkml-ec2,2020-03-11 00:41:36.469,"END RequestId: daf42bc4-7016-4d6f-8f14-b109c4e4b97c
+"
+799687528413:/aws/lambda/start-sparkml-ec2,2020-03-11 00:41:36.469,"REPORT RequestId: daf42bc4-7016-4d6f-8f14-b109c4e4b97c	Duration: 2665.25 ms	Billed Duration: 2700 ms	Memory Size: 128 MB	Max Memory Used: 87 MB	Init Duration: 281.45 ms	
+"
+799687528413:/aws/lambda/start-sparkml-ec2,2020-03-11 00:41:36.429,"Started Instance ID ['i-0eb9a408ec2b491c8'] for processing
+"
+799687528413:/aws/lambda/start-sparkml-ec2,2020-03-11 00:41:33.785,"START RequestId: daf42bc4-7016-4d6f-8f14-b109c4e4b97c Version: $LATEST
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:41:26.803,"END RequestId: 3067e4f9-4594-407c-90dc-af4beb904bb6
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:41:26.803,"REPORT RequestId: 3067e4f9-4594-407c-90dc-af4beb904bb6	Duration: 113737.95 ms	Billed Duration: 113800 ms	Memory Size: 128 MB	Max Memory Used: 112 MB	Init Duration: 653.14 ms	
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:41:26.763,"[ERROR] OSError: [Errno 97] Address family not supported by protocolTraceback (most recent call last):  File ""/var/task/startsparkml.py"", line 39, in lambda_handler    instance_ip, username='ec2-user', pkey=privkey  File ""/var/task/paramiko/client.py"", line 343, in connect    sock = socket.socket(af, socket.SOCK_STREAM)  File ""/var/lang/lib/python3.7/socket.py"", line 151, in __init__    _socket.socket.__init__(self, family, type, proto, fileno)
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:41:05.602,"Downloading key
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:39:35.202,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:39:33.045,"START RequestId: 3067e4f9-4594-407c-90dc-af4beb904bb6 Version: $LATEST
+"
+799687528413:/aws/lambda/start-sparkml-ec2,2020-03-11 00:39:15.733,"END RequestId: 88af5fc9-8fae-4321-ab6c-a6e9bf790ca5
+"
+799687528413:/aws/lambda/start-sparkml-ec2,2020-03-11 00:39:15.733,"REPORT RequestId: 88af5fc9-8fae-4321-ab6c-a6e9bf790ca5	Duration: 1.81 ms	Billed Duration: 100 ms	Memory Size: 128 MB	Max Memory Used: 55 MB	Init Duration: 128.81 ms	
+"
+799687528413:/aws/lambda/start-sparkml-ec2,2020-03-11 00:39:15.717,"[ERROR] Runtime.UserCodeSyntaxError: Syntax error in module 'lambda_function': unindent does not match any outer indentation level (lambda_function.py, line 16)Traceback (most recent call last):  File ""/var/task/lambda_function.py"" Line 16           return {
+"
+799687528413:/aws/lambda/start-sparkml-ec2,2020-03-11 00:39:15.716,"START RequestId: 88af5fc9-8fae-4321-ab6c-a6e9bf790ca5 Version: $LATEST
+"
+799687528413:/aws/lambda/end_cmss3-ec2,2020-03-11 00:32:41.952,"END RequestId: 29a242eb-19e3-47e6-9837-c39cb8f54639
+"
+799687528413:/aws/lambda/end_cmss3-ec2,2020-03-11 00:32:41.952,"REPORT RequestId: 29a242eb-19e3-47e6-9837-c39cb8f54639	Duration: 2038.80 ms	Billed Duration: 2100 ms	Memory Size: 128 MB	Max Memory Used: 87 MB	Init Duration: 306.31 ms	
+"
+799687528413:/aws/lambda/end_cmss3-ec2,2020-03-11 00:32:41.912,"Stopped Instance ID ['i-0f9a14fb4d50a61a3']
+"
+799687528413:/aws/lambda/end_cmss3-ec2,2020-03-11 00:32:39.913,"START RequestId: 29a242eb-19e3-47e6-9837-c39cb8f54639 Version: $LATEST
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-11 00:30:58.993,"END RequestId: bf313950-ce09-4c3a-9ff6-ceaef1d24052
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-11 00:30:58.993,"REPORT RequestId: bf313950-ce09-4c3a-9ff6-ceaef1d24052	Duration: 2225.15 ms	Billed Duration: 2300 ms	Memory Size: 128 MB	Max Memory Used: 87 MB	Init Duration: 277.85 ms	
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-11 00:30:58.948,"Started Instance ID ['i-0f9a14fb4d50a61a3'] for processing
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-11 00:30:56.749,"START RequestId: bf313950-ce09-4c3a-9ff6-ceaef1d24052 Version: $LATEST
+"
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 00:21:40.966,"END RequestId: b12587e2-a56e-4aae-941d-c7ccf8cac076
+"
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 00:21:40.966,"REPORT RequestId: b12587e2-a56e-4aae-941d-c7ccf8cac076	Duration: 2116.27 ms	Billed Duration: 2200 ms	Memory Size: 128 MB	Max Memory Used: 87 MB	Init Duration: 281.78 ms	
+"
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 00:21:40.926,"Stopped Instance ID ['i-0eb9a408ec2b491c8']
+"
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 00:21:38.831,"START RequestId: b12587e2-a56e-4aae-941d-c7ccf8cac076 Version: $LATEST
+"
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 00:21:23.436,"END RequestId: 250b2200-0428-43a4-aab2-b15d1cad744b
+"
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 00:21:23.436,"REPORT RequestId: 250b2200-0428-43a4-aab2-b15d1cad744b	Duration: 2220.45 ms	Billed Duration: 2300 ms	Memory Size: 128 MB	Max Memory Used: 87 MB	Init Duration: 256.33 ms	
+"
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 00:21:23.415,"[ERROR] NameError: name 'json' is not definedTraceback (most recent call last):  File ""/var/task/lambda_function.py"", line 22, in lambda_handler    'body': json.dumps('Failed. Check logs')
+"
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 00:21:23.393,"Stopped Instance ID ['i-0eb9a408ec2b491c8']
+"
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 00:21:21.216,"START RequestId: 250b2200-0428-43a4-aab2-b15d1cad744b Version: $LATEST
+"
+799687528413:/aws/lambda/start-sparkml-ec2,2020-03-11 00:17:04.879,"END RequestId: 2b0bbc6b-83b3-488b-8cf7-71d19e437dbd
+"
+799687528413:/aws/lambda/start-sparkml-ec2,2020-03-11 00:17:04.879,"REPORT RequestId: 2b0bbc6b-83b3-488b-8cf7-71d19e437dbd	Duration: 2275.86 ms	Billed Duration: 2300 ms	Memory Size: 128 MB	Max Memory Used: 87 MB	Init Duration: 218.93 ms	
+"
+799687528413:/aws/lambda/start-sparkml-ec2,2020-03-11 00:17:04.834,"Started Instance ID ['i-0eb9a408ec2b491c8'] for processing
+"
+799687528413:/aws/lambda/start-sparkml-ec2,2020-03-11 00:17:02.584,"START RequestId: 2b0bbc6b-83b3-488b-8cf7-71d19e437dbd Version: $LATEST
+"
+799687528413:/aws/lambda/start-sparkml-ec2,2020-03-11 00:15:47.517,"END RequestId: c43b7fd4-989e-421f-88a4-f04bca68a862
+"
+799687528413:/aws/lambda/start-sparkml-ec2,2020-03-11 00:15:47.517,"REPORT RequestId: c43b7fd4-989e-421f-88a4-f04bca68a862	Duration: 1.72 ms	Billed Duration: 100 ms	Memory Size: 128 MB	Max Memory Used: 55 MB	Init Duration: 130.43 ms	
+"
+799687528413:/aws/lambda/start-sparkml-ec2,2020-03-11 00:15:47.516,"[ERROR] Runtime.UserCodeSyntaxError: Syntax error in module 'lambda_function': invalid syntax (lambda_function.py, line 19)Traceback (most recent call last):  File ""/var/task/lambda_function.py"" Line 19                'body': json.dumps('Success.')
+"
+799687528413:/aws/lambda/start-sparkml-ec2,2020-03-11 00:15:47.515,"START RequestId: c43b7fd4-989e-421f-88a4-f04bca68a862 Version: $LATEST
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:15:04.779,"END RequestId: 3e0ecf94-c533-4997-8355-8bf49688d7af
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:15:04.779,"REPORT RequestId: 3e0ecf94-c533-4997-8355-8bf49688d7af	Duration: 110943.83 ms	Billed Duration: 111000 ms	Memory Size: 128 MB	Max Memory Used: 116 MB	
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:15:04.758,"[ERROR] OSError: [Errno 97] Address family not supported by protocolTraceback (most recent call last):  File ""/var/task/startsparkml.py"", line 39, in lambda_handler    instance_ip, username='ec2-user', pkey=privkey  File ""/var/task/paramiko/client.py"", line 343, in connect    sock = socket.socket(af, socket.SOCK_STREAM)  File ""/var/lang/lib/python3.7/socket.py"", line 151, in __init__    _socket.socket.__init__(self, family, type, proto, fileno)
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:14:44.356,"Downloading key
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:13:14.035,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:13:13.830,"START RequestId: 3e0ecf94-c533-4997-8355-8bf49688d7af Version: $LATEST
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:11:03.634,"END RequestId: 3e0ecf94-c533-4997-8355-8bf49688d7af
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:11:03.634,"REPORT RequestId: 3e0ecf94-c533-4997-8355-8bf49688d7af	Duration: 242127.65 ms	Billed Duration: 242200 ms	Memory Size: 128 MB	Max Memory Used: 114 MB	
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:11:03.614,"[ERROR] TimeoutError: [Errno 110] Connection timed outTraceback (most recent call last):  File ""/var/task/startsparkml.py"", line 39, in lambda_handler    instance_ip, username='ec2-user', pkey=privkey  File ""/var/task/paramiko/client.py"", line 349, in connect    retry_on_signal(lambda: sock.connect(addr))  File ""/var/task/paramiko/util.py"", line 283, in retry_on_signal    return function()  File ""/var/task/paramiko/client.py"", line 349, in <lambda>    retry_on_signal(lambda: sock.connect(addr))
+"
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 00:08:50.189,"END RequestId: 8e7ff5fe-ab72-4648-b24a-10c2de0f7e3a
+"
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 00:08:50.189,"REPORT RequestId: 8e7ff5fe-ab72-4648-b24a-10c2de0f7e3a	Duration: 2150.95 ms	Billed Duration: 2200 ms	Memory Size: 128 MB	Max Memory Used: 87 MB	Init Duration: 294.70 ms	
+"
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 00:08:50.147,"Stopped Instance ID ['i-0eb9a408ec2b491c8']
+"
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 00:08:48.038,"START RequestId: 8e7ff5fe-ab72-4648-b24a-10c2de0f7e3a Version: $LATEST
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:08:32.036,"Downloading key
+"
+799687528413:/aws/lambda/start-sparkml-ec2,2020-03-11 00:08:05.712,"END RequestId: 0ce979c1-3ceb-408c-b679-c93ff660757e
+"
+799687528413:/aws/lambda/start-sparkml-ec2,2020-03-11 00:08:05.712,"REPORT RequestId: 0ce979c1-3ceb-408c-b679-c93ff660757e	Duration: 2429.33 ms	Billed Duration: 2500 ms	Memory Size: 128 MB	Max Memory Used: 87 MB	Init Duration: 266.62 ms	
+"
+799687528413:/aws/lambda/start-sparkml-ec2,2020-03-11 00:08:05.688,"Started Instance ID ['i-0eb9a408ec2b491c8'] for processing
+"
+799687528413:/aws/lambda/start-sparkml-ec2,2020-03-11 00:08:03.283,"START RequestId: 0ce979c1-3ceb-408c-b679-c93ff660757e Version: $LATEST
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:07:01.751,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:07:01.482,"START RequestId: 3e0ecf94-c533-4997-8355-8bf49688d7af Version: $LATEST
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:05:58.331,"END RequestId: 3e0ecf94-c533-4997-8355-8bf49688d7af
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:05:58.331,"REPORT RequestId: 3e0ecf94-c533-4997-8355-8bf49688d7af	Duration: 113512.72 ms	Billed Duration: 113600 ms	Memory Size: 128 MB	Max Memory Used: 112 MB	Init Duration: 630.83 ms	
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:05:58.311,"[ERROR] OSError: [Errno 97] Address family not supported by protocolTraceback (most recent call last):  File ""/var/task/startsparkml.py"", line 39, in lambda_handler    instance_ip, username='ec2-user', pkey=privkey  File ""/var/task/paramiko/client.py"", line 343, in connect    sock = socket.socket(af, socket.SOCK_STREAM)  File ""/var/lang/lib/python3.7/socket.py"", line 151, in __init__    _socket.socket.__init__(self, family, type, proto, fileno)
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:05:37.210,"Downloading key
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:04:06.770,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-11 00:04:04.798,"START RequestId: 3e0ecf94-c533-4997-8355-8bf49688d7af Version: $LATEST
+"
+799687528413:/aws/lambda/start-sparkml-ec2,2020-03-11 00:03:47.107,"REPORT RequestId: 320d8d56-f8fb-43b5-b45d-0d5f546b9173	Duration: 2094.92 ms	Billed Duration: 2100 ms	Memory Size: 128 MB	Max Memory Used: 87 MB	Init Duration: 276.09 ms	
+"
+799687528413:/aws/lambda/start-sparkml-ec2,2020-03-11 00:03:47.106,"END RequestId: 320d8d56-f8fb-43b5-b45d-0d5f546b9173
+"
+799687528413:/aws/lambda/start-sparkml-ec2,2020-03-11 00:03:45.011,"START RequestId: 320d8d56-f8fb-43b5-b45d-0d5f546b9173 Version: $LATEST
+"
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 00:02:27.661,"END RequestId: 64775a13-7c70-4878-87d1-d837d2c7d134
+"
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 00:02:27.661,"REPORT RequestId: 64775a13-7c70-4878-87d1-d837d2c7d134	Duration: 2197.56 ms	Billed Duration: 2200 ms	Memory Size: 128 MB	Max Memory Used: 87 MB	Init Duration: 328.79 ms	
+"
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 00:02:27.609,"Stopped Instance ID ['i-0eb9a408ec2b491c8']
+"
+799687528413:/aws/lambda/end-sparkml-ec2,2020-03-11 00:02:25.463,"START RequestId: 64775a13-7c70-4878-87d1-d837d2c7d134 Version: $LATEST
+"
+799687528413:/aws/lambda/redshift-load-beneficiary-summary,2020-03-10 23:34:54.201,"END RequestId: c3484b13-7177-4f5a-bd38-a2a3197cce48
+"
+799687528413:/aws/lambda/redshift-load-beneficiary-summary,2020-03-10 23:34:54.201,"REPORT RequestId: c3484b13-7177-4f5a-bd38-a2a3197cce48	Duration: 36036.16 ms	Billed Duration: 36100 ms	Memory Size: 128 MB	Max Memory Used: 83 MB	Init Duration: 244.67 ms	
+"
+799687528413:/aws/lambda/redshift-load-beneficiary-summary,2020-03-10 23:34:18.380,"2020-03-10T23:34:18.366Z	c3484b13-7177-4f5a-bd38-a2a3197cce48	INFO	Executing set search_path to cms; begin; delete from cms.beneficiary_summary; copy cms.beneficiary_summary from 's3://cms-data-1/Beneficiary_Summary/' IAM_ROLE 'arn:aws:iam::799687528413:role/RedshiftDWS3FullAccess' FORMAT AS PARQUET; commit; 
+"
+799687528413:/aws/lambda/redshift-load-beneficiary-summary,2020-03-10 23:34:18.180,"2020-03-10T23:34:18.143Z	c3484b13-7177-4f5a-bd38-a2a3197cce48	INFO	Connecting to redshift-cms-cluster.cx4pss4e1ntx.us-east-1.redshift.amazonaws.com
+"
+799687528413:/aws/lambda/redshift-load-beneficiary-summary,2020-03-10 23:34:18.135,"START RequestId: c3484b13-7177-4f5a-bd38-a2a3197cce48 Version: $LATEST
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-10 23:05:47.242,"END RequestId: 18d2897e-3cf7-4b6b-85cf-64a3d5870743
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-10 23:05:47.242,"REPORT RequestId: 18d2897e-3cf7-4b6b-85cf-64a3d5870743	Duration: 424052.88 ms	Billed Duration: 424100 ms	Memory Size: 128 MB	Max Memory Used: 112 MB	Init Duration: 665.45 ms	
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-10 23:00:37.138,"Executing /home/ec2-user/sparkml.sh
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-10 23:00:37.081,"Connected to 35.170.66.249
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-10 23:00:37.081,"Executing chmod 700 /home/ec2-user/sparkml.sh
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-10 23:00:15.858,"Downloading key
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-10 22:58:45.384,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/sparkml-cms,2020-03-10 22:58:43.184,"START RequestId: 18d2897e-3cf7-4b6b-85cf-64a3d5870743 Version: $LATEST
+"
+799687528413:cms-annual-cost-predictions,2020-03-10 22:45:03.062,Predictions processed in 0:27:45.709633
+799687528413:/aws/lambda/end_cmss3-ec2,2020-03-10 20:22:34.222,"END RequestId: fc38bdbb-0100-42e3-b2b9-9dfbf05c4477
+"
+799687528413:/aws/lambda/end_cmss3-ec2,2020-03-10 20:22:34.222,"REPORT RequestId: fc38bdbb-0100-42e3-b2b9-9dfbf05c4477	Duration: 1840.39 ms	Billed Duration: 1900 ms	Memory Size: 128 MB	Max Memory Used: 86 MB	Init Duration: 222.70 ms	
+"
+799687528413:/aws/lambda/end_cmss3-ec2,2020-03-10 20:22:34.182,"Stopped Instance ID ['i-0f9a14fb4d50a61a3']
+"
+799687528413:/aws/lambda/end_cmss3-ec2,2020-03-10 20:22:32.362,"START RequestId: fc38bdbb-0100-42e3-b2b9-9dfbf05c4477 Version: $LATEST
+"
+799687528413:cmss3-processing,2020-03-10 20:22:31.029,1420 total files processed in 0:35:46.943719
+799687528413:/aws/lambda/end_cmss3-ec2,2020-03-09 21:39:55.796,"END RequestId: b537592a-69c2-473c-bfce-f9e4d78bc1c0
+"
+799687528413:/aws/lambda/end_cmss3-ec2,2020-03-09 21:39:55.796,"REPORT RequestId: b537592a-69c2-473c-bfce-f9e4d78bc1c0	Duration: 2067.79 ms	Billed Duration: 2100 ms	Memory Size: 128 MB	Max Memory Used: 87 MB	Init Duration: 267.26 ms	
+"
+799687528413:/aws/lambda/end_cmss3-ec2,2020-03-09 21:39:55.756,"Stopped Instance ID ['i-0f9a14fb4d50a61a3']
+"
+799687528413:/aws/lambda/end_cmss3-ec2,2020-03-09 21:39:53.709,"START RequestId: b537592a-69c2-473c-bfce-f9e4d78bc1c0 Version: $LATEST
+"
+799687528413:cmss3-processing,2020-03-09 21:39:51.844,1420 total files processed in 3:42:06.526572
+799687528413:/aws/lambda/start-sparkml-ec2,2020-03-09 19:57:46.336,"END RequestId: 93ee8099-060d-4c33-940c-fabaf1744ce7
+"
+799687528413:/aws/lambda/start-sparkml-ec2,2020-03-09 19:57:46.336,"REPORT RequestId: 93ee8099-060d-4c33-940c-fabaf1744ce7	Duration: 2610.07 ms	Billed Duration: 2700 ms	Memory Size: 128 MB	Max Memory Used: 87 MB	Init Duration: 276.80 ms	
+"
+799687528413:/aws/lambda/start-sparkml-ec2,2020-03-09 19:57:46.296,"Started Instance ID ['i-0eb9a408ec2b491c8'] for processing
+"
+799687528413:/aws/lambda/start-sparkml-ec2,2020-03-09 19:57:43.725,"START RequestId: 93ee8099-060d-4c33-940c-fabaf1744ce7 Version: $LATEST
+"
+799687528413:cms-annual-cost-predictions,2020-03-09 16:15:46.960,Predictions processed in 0:29:08.220924
+799687528413:cms-annual-cost-predictions,2020-03-09 14:15:05.957,Predictions processed in 0:33:13.593330
+799687528413:/aws/lambda/end_cmss3-ec2,2020-03-09 12:37:05.020,"END RequestId: 10b228ad-7f5e-4f00-9b42-16b2285b193c
+"
+799687528413:/aws/lambda/end_cmss3-ec2,2020-03-09 12:37:05.020,"REPORT RequestId: 10b228ad-7f5e-4f00-9b42-16b2285b193c	Duration: 2060.14 ms	Billed Duration: 2100 ms	Memory Size: 128 MB	Max Memory Used: 87 MB	Init Duration: 277.36 ms	
+"
+799687528413:/aws/lambda/end_cmss3-ec2,2020-03-09 12:37:04.980,"Stopped Instance ID ['i-0f9a14fb4d50a61a3']
+"
+799687528413:/aws/lambda/end_cmss3-ec2,2020-03-09 12:37:02.941,"START RequestId: 10b228ad-7f5e-4f00-9b42-16b2285b193c Version: $LATEST
+"
+799687528413:cmss3-processing,2020-03-09 12:37:02.137,1420 total files processed in 2:41:57.763709
+799687528413:/aws/lambda/end_cmss3-ec2,2020-03-09 08:41:00.308,"END RequestId: 458e6177-5e19-4e43-a441-090ba9f89f26
+"
+799687528413:/aws/lambda/end_cmss3-ec2,2020-03-09 08:41:00.308,"REPORT RequestId: 458e6177-5e19-4e43-a441-090ba9f89f26	Duration: 2018.99 ms	Billed Duration: 2100 ms	Memory Size: 128 MB	Max Memory Used: 87 MB	Init Duration: 268.26 ms	
+"
+799687528413:/aws/lambda/end_cmss3-ec2,2020-03-09 08:41:00.254,"Stopped Instance ID ['i-0f9a14fb4d50a61a3']
+"
+799687528413:/aws/lambda/end_cmss3-ec2,2020-03-09 08:40:58.289,"START RequestId: 458e6177-5e19-4e43-a441-090ba9f89f26 Version: $LATEST
+"
+799687528413:cmss3-processing,2020-03-09 08:40:57.207,1420 total files processed in 0:30:20.930247
+799687528413:cms-annual-cost-predictions,2020-03-08 04:06:03.155,Predictions processed in 0:26:31.594984
+799687528413:cms-annual-cost-predictions,2020-03-08 02:57:27.550,Predictions processed in 0:16:16.414424
+799687528413:/aws/lambda/end_cmss3-ec2,2020-03-03 23:45:09.708,"END RequestId: e5d98da2-9069-424d-b454-eed6756bc353
+"
+799687528413:/aws/lambda/end_cmss3-ec2,2020-03-03 23:45:09.708,"REPORT RequestId: e5d98da2-9069-424d-b454-eed6756bc353	Duration: 2069.78 ms	Billed Duration: 2100 ms	Memory Size: 128 MB	Max Memory Used: 87 MB	Init Duration: 277.18 ms	
+"
+799687528413:/aws/lambda/end_cmss3-ec2,2020-03-03 23:45:09.668,"Stopped Instance ID ['i-0f9a14fb4d50a61a3']
+"
+799687528413:/aws/lambda/end_cmss3-ec2,2020-03-03 23:45:07.620,"START RequestId: e5d98da2-9069-424d-b454-eed6756bc353 Version: $LATEST
+"
+799687528413:cmss3-processing,2020-03-03 23:45:05.726,1420 total files processed in 1:50:50.440342
+799687528413:/aws/lambda/process-cmss3,2020-03-03 21:59:23.118,"END RequestId: 49565300-114a-45bc-953f-144ba94b1731
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 21:59:23.118,"REPORT RequestId: 49565300-114a-45bc-953f-144ba94b1731	Duration: 423984.69 ms	Billed Duration: 424000 ms	Memory Size: 128 MB	Max Memory Used: 112 MB	Init Duration: 641.62 ms	
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 21:54:12.960,"Executing /home/ec2-user/processcmss3.sh
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 21:54:12.906,"Connected to 54.227.120.4
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 21:54:12.906,"Executing chmod 700 /home/ec2-user/processcmss3.sh
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 21:53:51.655,"Downloading key
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 21:52:21.275,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 21:52:19.130,"START RequestId: 49565300-114a-45bc-953f-144ba94b1731 Version: $LATEST
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 21:52:02.068,"END RequestId: ade1f677-e48e-4ab3-9397-31394a728148
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 21:52:02.068,"REPORT RequestId: ade1f677-e48e-4ab3-9397-31394a728148	Duration: 2218.89 ms	Billed Duration: 2300 ms	Memory Size: 128 MB	Max Memory Used: 86 MB	Init Duration: 289.40 ms	
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 21:52:02.015,"Started Instance ID ['i-0f9a14fb4d50a61a3'] for processing
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 21:51:59.829,"START RequestId: ade1f677-e48e-4ab3-9397-31394a728148 Version: $LATEST
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 21:41:02.327,"REPORT RequestId: 6b050ace-b241-4ae5-af2e-2f28fef945f6	Duration: 722159.52 ms	Billed Duration: 722200 ms	Memory Size: 256 MB	Max Memory Used: 112 MB	Init Duration: 731.13 ms	
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 21:41:02.327,"END RequestId: 6b050ace-b241-4ae5-af2e-2f28fef945f6
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 21:30:52.225,"Executing /home/ec2-user/processcmss3.sh
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 21:30:52.171,"Connected to 3.84.234.109
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 21:30:52.171,"Executing chmod 700 /home/ec2-user/processcmss3.sh
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 21:30:31.444,"Downloading key
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 21:29:01.184,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 21:29:00.164,"START RequestId: 6b050ace-b241-4ae5-af2e-2f28fef945f6 Version: $LATEST
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 21:28:42.588,"END RequestId: 03ea5b24-3c3d-451f-b819-dcabb7adfcc1
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 21:28:42.588,"REPORT RequestId: 03ea5b24-3c3d-451f-b819-dcabb7adfcc1	Duration: 746.85 ms	Billed Duration: 800 ms	Memory Size: 128 MB	Max Memory Used: 87 MB	
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 21:28:42.548,"Started Instance ID ['i-0f9a14fb4d50a61a3'] for processing
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 21:28:41.819,"START RequestId: 03ea5b24-3c3d-451f-b819-dcabb7adfcc1 Version: $LATEST
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 21:25:28.209,"REPORT RequestId: 65fb755f-cfc1-4f7d-ae4a-a223d87ea459	Duration: 2019.69 ms	Billed Duration: 2100 ms	Memory Size: 128 MB	Max Memory Used: 87 MB	Init Duration: 286.09 ms	
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 21:25:28.209,"END RequestId: 65fb755f-cfc1-4f7d-ae4a-a223d87ea459
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 21:25:28.167,"Started Instance ID ['i-0f9a14fb4d50a61a3'] for processing
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 21:25:26.189,"START RequestId: 65fb755f-cfc1-4f7d-ae4a-a223d87ea459 Version: $LATEST
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 21:09:17.404,"END RequestId: 6e8b1bbf-047c-48a4-bf50-5c18aa43b3eb
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 21:09:17.404,"REPORT RequestId: 6e8b1bbf-047c-48a4-bf50-5c18aa43b3eb	Duration: 722719.41 ms	Billed Duration: 722800 ms	Memory Size: 256 MB	Max Memory Used: 112 MB	Init Duration: 675.41 ms	
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 21:09:04.099,"REPORT RequestId: 86d9a3d5-0214-4726-865f-59887d54f729	Duration: 722158.99 ms	Billed Duration: 722200 ms	Memory Size: 256 MB	Max Memory Used: 112 MB	Init Duration: 651.25 ms	
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 21:09:04.099,"END RequestId: 86d9a3d5-0214-4726-865f-59887d54f729
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 21:09:03.819,"END RequestId: ac3aeddc-7afa-4c6d-994f-865138de61fe
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 21:09:03.819,"REPORT RequestId: ac3aeddc-7afa-4c6d-994f-865138de61fe	Duration: 722116.52 ms	Billed Duration: 722200 ms	Memory Size: 256 MB	Max Memory Used: 112 MB	Init Duration: 657.97 ms	
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:59:13.016,"END RequestId: cca999ea-110d-46fa-91b5-b73cac645df7
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:59:13.016,"REPORT RequestId: cca999ea-110d-46fa-91b5-b73cac645df7	Duration: 241559.77 ms	Billed Duration: 241600 ms	Memory Size: 256 MB	Max Memory Used: 112 MB	Init Duration: 659.77 ms	
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:59:13.014,"[ERROR] TimeoutError: [Errno 110] Connection timed outTraceback (most recent call last):  File ""/var/task/startcmss3.py"", line 41, in lambda_handler    instance_ip, username='ec2-user', pkey=privkey  File ""/var/task/paramiko/client.py"", line 349, in connect    retry_on_signal(lambda: sock.connect(addr))  File ""/var/task/paramiko/util.py"", line 283, in retry_on_signal    return function()  File ""/var/task/paramiko/client.py"", line 349, in <lambda>    retry_on_signal(lambda: sock.connect(addr))
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:59:07.275,"Executing /home/ec2-user/processcmss3.sh
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:59:07.194,"Connected to 52.205.53.171
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:59:07.194,"Executing chmod 700 /home/ec2-user/processcmss3.sh
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:58:59.137,"END RequestId: 5e563db2-bd29-4d5c-8e01-09cbfebf6c65
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:58:59.137,"REPORT RequestId: 5e563db2-bd29-4d5c-8e01-09cbfebf6c65	Duration: 241225.73 ms	Billed Duration: 241300 ms	Memory Size: 256 MB	Max Memory Used: 112 MB	Init Duration: 641.52 ms	
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:58:59.135,"[ERROR] TimeoutError: [Errno 110] Connection timed outTraceback (most recent call last):  File ""/var/task/startcmss3.py"", line 41, in lambda_handler    instance_ip, username='ec2-user', pkey=privkey  File ""/var/task/paramiko/client.py"", line 349, in connect    retry_on_signal(lambda: sock.connect(addr))  File ""/var/task/paramiko/util.py"", line 283, in retry_on_signal    return function()  File ""/var/task/paramiko/client.py"", line 349, in <lambda>    retry_on_signal(lambda: sock.connect(addr))
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:58:55.745,"END RequestId: f23553c6-1d13-4c61-8b37-1b00ddf5ecb8
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:58:55.745,"REPORT RequestId: f23553c6-1d13-4c61-8b37-1b00ddf5ecb8	Duration: 242045.56 ms	Billed Duration: 242100 ms	Memory Size: 256 MB	Max Memory Used: 112 MB	Init Duration: 637.64 ms	
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:58:55.743,"[ERROR] TimeoutError: [Errno 110] Connection timed outTraceback (most recent call last):  File ""/var/task/startcmss3.py"", line 41, in lambda_handler    instance_ip, username='ec2-user', pkey=privkey  File ""/var/task/paramiko/client.py"", line 349, in connect    retry_on_signal(lambda: sock.connect(addr))  File ""/var/task/paramiko/util.py"", line 283, in retry_on_signal    return function()  File ""/var/task/paramiko/client.py"", line 349, in <lambda>    retry_on_signal(lambda: sock.connect(addr))
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:58:53.972,"Executing /home/ec2-user/processcmss3.sh
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:58:53.916,"Connected to 52.205.53.171
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:58:53.916,"Executing chmod 700 /home/ec2-user/processcmss3.sh
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:58:53.686,"Executing /home/ec2-user/processcmss3.sh
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:58:53.630,"Connected to 52.205.53.171
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:58:53.630,"Executing chmod 700 /home/ec2-user/processcmss3.sh
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:58:45.982,"Downloading key
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:58:33.211,"Downloading key
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:58:32.963,"Downloading key
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:57:15.722,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:57:14.682,"START RequestId: 6e8b1bbf-047c-48a4-bf50-5c18aa43b3eb Version: $LATEST
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:57:02.990,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:57:02.737,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:57:01.932,"START RequestId: 86d9a3d5-0214-4726-865f-59887d54f729 Version: $LATEST
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:57:01.700,"START RequestId: ac3aeddc-7afa-4c6d-994f-865138de61fe Version: $LATEST
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 20:56:57.876,"END RequestId: 83b7a390-0be2-47fe-9be4-302e13f7b5f8
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 20:56:57.876,"REPORT RequestId: 83b7a390-0be2-47fe-9be4-302e13f7b5f8	Duration: 2146.99 ms	Billed Duration: 2200 ms	Memory Size: 128 MB	Max Memory Used: 87 MB	Init Duration: 283.51 ms	
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 20:56:57.836,"Started Instance ID ['i-0f9a14fb4d50a61a3'] for processing
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 20:56:55.710,"START RequestId: 83b7a390-0be2-47fe-9be4-302e13f7b5f8 Version: $LATEST
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:56:42.816,"Downloading key
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:56:29.172,"Downloading key
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:56:25.005,"Downloading key
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:55:12.514,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:55:11.454,"START RequestId: cca999ea-110d-46fa-91b5-b73cac645df7 Version: $LATEST
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:54:58.934,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:54:57.909,"START RequestId: 5e563db2-bd29-4d5c-8e01-09cbfebf6c65 Version: $LATEST
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:54:54.763,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:54:53.698,"START RequestId: f23553c6-1d13-4c61-8b37-1b00ddf5ecb8 Version: $LATEST
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:53:00.507,"END RequestId: cca999ea-110d-46fa-91b5-b73cac645df7
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:53:00.507,"REPORT RequestId: cca999ea-110d-46fa-91b5-b73cac645df7	Duration: 423628.03 ms	Billed Duration: 423700 ms	Memory Size: 256 MB	Max Memory Used: 114 MB	
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:53:00.506,"[ERROR] NameError: name 'json' is not definedTraceback (most recent call last):  File ""/var/task/startcmss3.py"", line 65, in lambda_handler    'body': json.dumps('Script failed.')
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:52:52.912,"END RequestId: 5e563db2-bd29-4d5c-8e01-09cbfebf6c65
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:52:52.912,"REPORT RequestId: 5e563db2-bd29-4d5c-8e01-09cbfebf6c65	Duration: 422846.31 ms	Billed Duration: 422900 ms	Memory Size: 256 MB	Max Memory Used: 114 MB	
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:52:52.895,"[ERROR] NameError: name 'json' is not definedTraceback (most recent call last):  File ""/var/task/startcmss3.py"", line 65, in lambda_handler    'body': json.dumps('Script failed.')
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:52:50.785,"END RequestId: f23553c6-1d13-4c61-8b37-1b00ddf5ecb8
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:52:50.785,"REPORT RequestId: f23553c6-1d13-4c61-8b37-1b00ddf5ecb8	Duration: 426871.60 ms	Billed Duration: 426900 ms	Memory Size: 256 MB	Max Memory Used: 114 MB	
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:52:50.782,"[ERROR] NameError: name 'json' is not definedTraceback (most recent call last):  File ""/var/task/startcmss3.py"", line 65, in lambda_handler    'body': json.dumps('Script failed.')
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:47:50.304,"Executing /home/ec2-user/processcmss3.sh
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:47:49.729,"Connected to 3.82.130.173
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:47:49.729,"Executing chmod 700 /home/ec2-user/processcmss3.sh
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:47:42.728,"Executing /home/ec2-user/processcmss3.sh
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:47:42.437,"Connected to 3.82.130.173
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:47:42.437,"Executing chmod 700 /home/ec2-user/processcmss3.sh
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:47:40.476,"Executing /home/ec2-user/processcmss3.sh
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:47:39.736,"Connected to 3.82.130.173
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:47:39.736,"Executing chmod 700 /home/ec2-user/processcmss3.sh
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:47:27.161,"Downloading key
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:47:20.391,"Downloading key
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:47:14.244,"Downloading key
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:45:56.962,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:45:56.871,"START RequestId: cca999ea-110d-46fa-91b5-b73cac645df7 Version: $LATEST
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:45:50.151,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:45:50.062,"START RequestId: 5e563db2-bd29-4d5c-8e01-09cbfebf6c65 Version: $LATEST
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:45:44.004,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:45:43.903,"START RequestId: f23553c6-1d13-4c61-8b37-1b00ddf5ecb8 Version: $LATEST
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:44:59.705,"END RequestId: cca999ea-110d-46fa-91b5-b73cac645df7
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:44:59.705,"REPORT RequestId: cca999ea-110d-46fa-91b5-b73cac645df7	Duration: 422789.47 ms	Billed Duration: 422800 ms	Memory Size: 256 MB	Max Memory Used: 112 MB	Init Duration: 629.08 ms	
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:44:59.687,"[ERROR] NameError: name 'json' is not definedTraceback (most recent call last):  File ""/var/task/startcmss3.py"", line 65, in lambda_handler    'body': json.dumps('Script failed.')
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:44:44.731,"END RequestId: f23553c6-1d13-4c61-8b37-1b00ddf5ecb8
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:44:44.731,"REPORT RequestId: f23553c6-1d13-4c61-8b37-1b00ddf5ecb8	Duration: 422151.23 ms	Billed Duration: 422200 ms	Memory Size: 256 MB	Max Memory Used: 112 MB	Init Duration: 655.41 ms	
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:44:44.719,"[ERROR] NameError: name 'json' is not definedTraceback (most recent call last):  File ""/var/task/startcmss3.py"", line 65, in lambda_handler    'body': json.dumps('Script failed.')
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:44:42.883,"END RequestId: 5e563db2-bd29-4d5c-8e01-09cbfebf6c65
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:44:42.883,"REPORT RequestId: 5e563db2-bd29-4d5c-8e01-09cbfebf6c65	Duration: 422048.05 ms	Billed Duration: 422100 ms	Memory Size: 256 MB	Max Memory Used: 112 MB	Init Duration: 655.00 ms	
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:44:42.881,"[ERROR] NameError: name 'json' is not definedTraceback (most recent call last):  File ""/var/task/startcmss3.py"", line 65, in lambda_handler    'body': json.dumps('Script failed.')
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:39:49.561,"Executing /home/ec2-user/processcmss3.sh
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:39:49.452,"Connected to 3.82.130.173
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:39:49.452,"Executing chmod 700 /home/ec2-user/processcmss3.sh
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:39:34.609,"Executing /home/ec2-user/processcmss3.sh
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:39:34.556,"Connected to 3.82.130.173
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:39:34.556,"Executing chmod 700 /home/ec2-user/processcmss3.sh
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:39:32.786,"Executing /home/ec2-user/processcmss3.sh
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:39:32.733,"Connected to 3.82.130.173
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:39:32.733,"Executing chmod 700 /home/ec2-user/processcmss3.sh
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:39:28.164,"Downloading key
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:39:13.873,"Downloading key
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:39:12.098,"Downloading key
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:37:57.944,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:37:56.915,"START RequestId: cca999ea-110d-46fa-91b5-b73cac645df7 Version: $LATEST
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:37:43.629,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:37:42.578,"START RequestId: f23553c6-1d13-4c61-8b37-1b00ddf5ecb8 Version: $LATEST
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:37:41.857,"Connecting to ec2 instance
+"
+799687528413:/aws/lambda/process-cmss3,2020-03-03 20:37:40.829,"START RequestId: 5e563db2-bd29-4d5c-8e01-09cbfebf6c65 Version: $LATEST
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 20:37:40.411,"END RequestId: 59a49098-a0c9-42ee-bab5-cffb6e700ec2
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 20:37:40.411,"REPORT RequestId: 59a49098-a0c9-42ee-bab5-cffb6e700ec2	Duration: 1981.39 ms	Billed Duration: 2000 ms	Memory Size: 128 MB	Max Memory Used: 86 MB	Init Duration: 291.41 ms	
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 20:37:40.371,"Started Instance ID ['i-0f9a14fb4d50a61a3'] for processing
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 20:37:38.410,"START RequestId: 59a49098-a0c9-42ee-bab5-cffb6e700ec2 Version: $LATEST
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 19:26:28.904,"END RequestId: f490f973-ee60-473b-8614-acda2a8ea7dd
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 19:26:28.904,"REPORT RequestId: f490f973-ee60-473b-8614-acda2a8ea7dd	Duration: 2368.00 ms	Billed Duration: 2400 ms	Memory Size: 128 MB	Max Memory Used: 86 MB	Init Duration: 315.96 ms	
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 19:26:28.847,"Started Instance ID ['i-0f9a14fb4d50a61a3'] for processing
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 19:26:26.518,"START RequestId: f490f973-ee60-473b-8614-acda2a8ea7dd Version: $LATEST
+"
+799687528413:/aws/lambda/end_cmss3-ec2,2020-03-03 19:25:32.945,"END RequestId: 35655627-fe2c-4990-9c52-753364c4e565
+"
+799687528413:/aws/lambda/end_cmss3-ec2,2020-03-03 19:25:32.945,"REPORT RequestId: 35655627-fe2c-4990-9c52-753364c4e565	Duration: 1883.52 ms	Billed Duration: 1900 ms	Memory Size: 128 MB	Max Memory Used: 87 MB	Init Duration: 270.63 ms	
+"
+799687528413:/aws/lambda/end_cmss3-ec2,2020-03-03 19:25:32.905,"Stopped Instance ID ['i-0f9a14fb4d50a61a3']
+"
+799687528413:/aws/lambda/end_cmss3-ec2,2020-03-03 19:25:31.042,"START RequestId: 35655627-fe2c-4990-9c52-753364c4e565 Version: $LATEST
+"
+799687528413:cmss3-processing,2020-03-03 19:10:09.320,1000 total files processed
+799687528413:cmss3-processing,2020-03-03 19:10:09.255,Processed
+799687528413:cmss3-processing,2020-03-03 19:09:17.946,1000 total files processed
+799687528413:cmss3-processing,2020-03-03 19:09:17.881,Processed
+799687528413:cmss3-processing,2020-03-03 19:05:32.742,Processed
+799687528413:cmss3-processing,2020-03-03 12:27:02.359,Processed
+799687528413:cmss3-processing,2020-03-03 12:26:35.293,Processed
+799687528413:cmss3-processing,2020-03-03 12:25:08.878,Processed
+799687528413:cmss3-processing,2020-03-03 12:25:06.975,Processed
+799687528413:cmss3-processing,2020-03-03 12:24:58.845,Processed
+799687528413:cmss3-processing,2020-03-03 12:07:51.731,Processed
+799687528413:cmss3-processing,2020-03-03 12:07:40.454,Processed
+799687528413:cmss3-processing,2020-03-03 11:50:13.432,Processed
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 09:12:40.408,"END RequestId: 50a5a13d-8ba6-4fb4-ad6f-43720f29b0eb
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 09:12:40.408,"REPORT RequestId: 50a5a13d-8ba6-4fb4-ad6f-43720f29b0eb	Duration: 2108.39 ms	Billed Duration: 2200 ms	Memory Size: 128 MB	Max Memory Used: 86 MB	Init Duration: 271.50 ms	
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 09:12:40.358,"Started Instance ID ['i-0f9a14fb4d50a61a3'] for processing
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 09:12:38.280,"START RequestId: 50a5a13d-8ba6-4fb4-ad6f-43720f29b0eb Version: $LATEST
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 09:09:58.184,"END RequestId: 1c3e9738-0685-4307-b330-d359b8f9fdbc
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 09:09:58.184,"REPORT RequestId: 1c3e9738-0685-4307-b330-d359b8f9fdbc	Duration: 2112.94 ms	Billed Duration: 2200 ms	Memory Size: 128 MB	Max Memory Used: 86 MB	Init Duration: 265.70 ms	
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 09:09:58.127,"Started Instance ID ['i-0f9a14fb4d50a61a3'] for processing
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 09:09:56.052,"START RequestId: 1c3e9738-0685-4307-b330-d359b8f9fdbc Version: $LATEST
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 09:06:00.286,"END RequestId: e2ff9dc4-4893-42c0-a6db-cc299ee98b65
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 09:06:00.286,"REPORT RequestId: e2ff9dc4-4893-42c0-a6db-cc299ee98b65	Duration: 2114.31 ms	Billed Duration: 2200 ms	Memory Size: 128 MB	Max Memory Used: 86 MB	Init Duration: 260.92 ms	
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 09:06:00.241,"Started Instance ID ['i-0f9a14fb4d50a61a3'] for processing
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 09:05:58.152,"START RequestId: e2ff9dc4-4893-42c0-a6db-cc299ee98b65 Version: $LATEST
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 09:01:20.880,"END RequestId: a133e001-2702-44ee-8a0b-4d637c9a389a
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 09:01:20.880,"REPORT RequestId: a133e001-2702-44ee-8a0b-4d637c9a389a	Duration: 2.10 ms	Billed Duration: 100 ms	Memory Size: 128 MB	Max Memory Used: 68 MB	Init Duration: 265.60 ms	
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 09:01:20.863,"[ERROR] Runtime.ImportModuleError: Unable to import module 'lambda_function': No module named 'flask'
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 09:01:20.862,"START RequestId: a133e001-2702-44ee-8a0b-4d637c9a389a Version: $LATEST
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 08:58:21.503,"END RequestId: d0605cbf-1145-401a-9368-66d8b4a0031f
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 08:58:21.503,"REPORT RequestId: d0605cbf-1145-401a-9368-66d8b4a0031f	Duration: 1.62 ms	Billed Duration: 100 ms	Memory Size: 128 MB	Max Memory Used: 55 MB	Init Duration: 109.73 ms	
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 08:58:21.502,"[ERROR] Runtime.UserCodeSyntaxError: Syntax error in module 'lambda_function': invalid syntax (lambda_function.py, line 22)Traceback (most recent call last):  File ""/var/task/lambda_function.py"" Line 22                ""body"": 'Server Error'
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 08:58:21.501,"START RequestId: d0605cbf-1145-401a-9368-66d8b4a0031f Version: $LATEST
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 08:55:04.168,"END RequestId: 3991a287-70cd-4846-b5b0-e1558cf903a9
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 08:55:04.168,"REPORT RequestId: 3991a287-70cd-4846-b5b0-e1558cf903a9	Duration: 5.38 ms	Billed Duration: 100 ms	Memory Size: 128 MB	Max Memory Used: 55 MB	Init Duration: 117.29 ms	
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 08:55:04.163,"[ERROR] Runtime.UserCodeSyntaxError: Syntax error in module 'lambda_function': invalid syntax (lambda_function.py, line 22)Traceback (most recent call last):  File ""/var/task/lambda_function.py"" Line 22                ""body"": json.dumps('Server Error')
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 08:55:04.162,"START RequestId: 3991a287-70cd-4846-b5b0-e1558cf903a9 Version: $LATEST
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 08:52:13.021,"END RequestId: 82cf87c4-6a58-43b4-a31b-724cce67955e
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 08:52:13.021,"REPORT RequestId: 82cf87c4-6a58-43b4-a31b-724cce67955e	Duration: 1.66 ms	Billed Duration: 100 ms	Memory Size: 128 MB	Max Memory Used: 55 MB	Init Duration: 112.76 ms	
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 08:52:13.020,"[ERROR] Runtime.UserCodeSyntaxError: Syntax error in module 'lambda_function': invalid syntax (lambda_function.py, line 22)Traceback (most recent call last):  File ""/var/task/lambda_function.py"" Line 22                'body': json.dumps('Server Error')
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 08:52:13.019,"START RequestId: 82cf87c4-6a58-43b4-a31b-724cce67955e Version: $LATEST
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 08:51:51.010,"END RequestId: 32b5943a-29c8-41dc-a2c8-ffeb88b027d6
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 08:51:51.010,"REPORT RequestId: 32b5943a-29c8-41dc-a2c8-ffeb88b027d6	Duration: 1.74 ms	Billed Duration: 100 ms	Memory Size: 128 MB	Max Memory Used: 55 MB	Init Duration: 114.74 ms	
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 08:51:51.009,"[ERROR] Runtime.UserCodeSyntaxError: Syntax error in module 'lambda_function': invalid syntax (lambda_function.py, line 22)Traceback (most recent call last):  File ""/var/task/lambda_function.py"" Line 22                'body': 'Server '
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 08:51:51.008,"START RequestId: 32b5943a-29c8-41dc-a2c8-ffeb88b027d6 Version: $LATEST
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 08:40:37.401,"END RequestId: 8e83fea0-2d5d-476b-951e-40dc677b0928
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 08:40:37.401,"REPORT RequestId: 8e83fea0-2d5d-476b-951e-40dc677b0928	Duration: 2082.40 ms	Billed Duration: 2100 ms	Memory Size: 128 MB	Max Memory Used: 87 MB	Init Duration: 275.79 ms	
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 08:40:37.348,"Started Instance ID ['i-0f9a14fb4d50a61a3'] for processing
+"
+799687528413:/aws/lambda/start-cmss3-ec2,2020-03-03 08:40:35.300,"START RequestId: 8e83fea0-2d5d-476b-951e-40dc677b0928 Version: $LATEST
+"

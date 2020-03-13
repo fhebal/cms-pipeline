@@ -1,0 +1,2335 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.19.1211.1636                               -->
+<workbook original-version='18.1' source-build='2019.4.1 (20194.19.1211.1636)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts ignorable='true' predowngraded='true' />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='annual_cost_predictions (cms.annual_cost_predictions) (cms)' inline='true' name='federated.1vubyr4102fdwb1h4umjv18mmhl2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='redshift-cms-cluster.cx4pss4e1ntx.us-east-1.redshift.amazonaws.com' name='redshift.0drbg8i1mqrrtr14bwypb1llbyuo'>
+            <connection class='redshift' dbname='dev' odbc-connect-string-extras='' one-time-sql='' port='5439' schema='cms' server='redshift-cms-cluster.cx4pss4e1ntx.us-east-1.redshift.amazonaws.com' single-node='yes' sslmode='' username='awsuser' />
+          </named-connection>
+        </named-connections>
+        <relation connection='redshift.0drbg8i1mqrrtr14bwypb1llbyuo' name='annual_cost_predictions' table='[cms].[annual_cost_predictions]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>annual_cost</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[annual_cost]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>annual_cost</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>patient_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[patient_id]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>patient_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>256</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age_yrs</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[age_yrs]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>age_yrs</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_SMALLINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SSHORT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>race</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[race]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>race</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_SMALLINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SSHORT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_SMALLINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SSHORT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dx</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[dx]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>dx</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>px</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[px]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>px</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hcpcs</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[hcpcs]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>hcpcs</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sp_alzhdmta</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[sp_alzhdmta]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>sp_alzhdmta</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_SMALLINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SSHORT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sp_chf</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[sp_chf]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>sp_chf</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_SMALLINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SSHORT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sp_chrnkidn</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[sp_chrnkidn]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>sp_chrnkidn</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_SMALLINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SSHORT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sp_cncr</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[sp_cncr]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>sp_cncr</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_SMALLINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SSHORT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sp_copd</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[sp_copd]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>sp_copd</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_SMALLINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SSHORT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sp_depressn</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[sp_depressn]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>sp_depressn</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_SMALLINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SSHORT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sp_diabetes</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[sp_diabetes]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>sp_diabetes</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_SMALLINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SSHORT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sp_ischmcht</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[sp_ischmcht]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>sp_ischmcht</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_SMALLINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SSHORT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sp_osteoprs</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[sp_osteoprs]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>sp_osteoprs</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_SMALLINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SSHORT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sp_ra_oa</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[sp_ra_oa]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>sp_ra_oa</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_SMALLINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SSHORT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sp_strketia</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[sp_strketia]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>sp_strketia</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_SMALLINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SSHORT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender_index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gender_index]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>gender_index</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>race_index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[race_index]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>race_index</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state_index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[state_index]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>state_index</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sp_alzhdmta_index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sp_alzhdmta_index]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>sp_alzhdmta_index</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sp_chf_index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sp_chf_index]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>sp_chf_index</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sp_chrnkidn_index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sp_chrnkidn_index]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>sp_chrnkidn_index</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sp_cncr_index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sp_cncr_index]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>sp_cncr_index</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sp_copd_index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sp_copd_index]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>sp_copd_index</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sp_depressn_index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sp_depressn_index]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>sp_depressn_index</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sp_diabetes_index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sp_diabetes_index]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>sp_diabetes_index</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sp_ischmcht_index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sp_ischmcht_index]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>sp_ischmcht_index</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sp_osteoprs_index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sp_osteoprs_index]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>sp_osteoprs_index</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sp_ra_oa_index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sp_ra_oa_index]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>sp_ra_oa_index</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sp_strketia_index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sp_strketia_index]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>sp_strketia_index</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>features</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[features]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>features</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>256</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prediction</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[prediction]</local-name>
+            <parent-name>[annual_cost_predictions]</parent-name>
+            <remote-alias>prediction</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Rounded Age' datatype='integer' name='[Calculation_916904765290094592]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOOR([age_yrs])' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Age Yrs' datatype='real' name='[age_yrs]' role='measure' type='quantitative' />
+      <column caption='Annual Cost' datatype='real' name='[annual_cost]' role='measure' type='quantitative' />
+      <column caption='Dx' datatype='integer' name='[dx]' role='measure' type='quantitative' />
+      <column caption='Features' datatype='string' name='[features]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='integer' name='[gender]' role='measure' type='quantitative' />
+      <column caption='Gender Index' datatype='real' name='[gender_index]' role='measure' type='quantitative' />
+      <column caption='Hcpcs' datatype='integer' name='[hcpcs]' role='measure' type='quantitative' />
+      <column caption='Patient Id' datatype='string' name='[patient_id]' role='dimension' type='nominal' />
+      <column caption='Prediction' datatype='real' name='[prediction]' role='measure' type='quantitative' />
+      <column caption='Px' datatype='integer' name='[px]' role='measure' type='quantitative' />
+      <column caption='Race' datatype='integer' name='[race]' role='measure' type='quantitative' />
+      <column caption='Race Index' datatype='real' name='[race_index]' role='measure' type='quantitative' />
+      <column caption='Sp Alzhdmta' datatype='integer' name='[sp_alzhdmta]' role='measure' type='quantitative' />
+      <column caption='Sp Alzhdmta Index' datatype='real' name='[sp_alzhdmta_index]' role='measure' type='quantitative' />
+      <column caption='Sp Chf' datatype='integer' name='[sp_chf]' role='measure' type='quantitative' />
+      <column caption='Sp Chf Index' datatype='real' name='[sp_chf_index]' role='measure' type='quantitative' />
+      <column caption='Sp Chrnkidn' datatype='integer' name='[sp_chrnkidn]' role='measure' type='quantitative' />
+      <column caption='Sp Chrnkidn Index' datatype='real' name='[sp_chrnkidn_index]' role='measure' type='quantitative' />
+      <column caption='Sp Cncr' datatype='integer' name='[sp_cncr]' role='measure' type='quantitative' />
+      <column caption='Sp Cncr Index' datatype='real' name='[sp_cncr_index]' role='measure' type='quantitative' />
+      <column caption='Sp Copd' datatype='integer' name='[sp_copd]' role='measure' type='quantitative' />
+      <column caption='Sp Copd Index' datatype='real' name='[sp_copd_index]' role='measure' type='quantitative' />
+      <column caption='Sp Depressn' datatype='integer' name='[sp_depressn]' role='measure' type='quantitative' />
+      <column caption='Sp Depressn Index' datatype='real' name='[sp_depressn_index]' role='measure' type='quantitative' />
+      <column caption='Sp Diabetes' datatype='integer' name='[sp_diabetes]' role='measure' type='quantitative' />
+      <column caption='Sp Diabetes Index' datatype='real' name='[sp_diabetes_index]' role='measure' type='quantitative' />
+      <column caption='Sp Ischmcht' datatype='integer' name='[sp_ischmcht]' role='measure' type='quantitative' />
+      <column caption='Sp Ischmcht Index' datatype='real' name='[sp_ischmcht_index]' role='measure' type='quantitative' />
+      <column caption='Sp Osteoprs' datatype='integer' name='[sp_osteoprs]' role='measure' type='quantitative' />
+      <column caption='Sp Osteoprs Index' datatype='real' name='[sp_osteoprs_index]' role='measure' type='quantitative' />
+      <column caption='Sp Ra Oa' datatype='integer' name='[sp_ra_oa]' role='measure' type='quantitative' />
+      <column caption='Sp Ra Oa Index' datatype='real' name='[sp_ra_oa_index]' role='measure' type='quantitative' />
+      <column caption='Sp Strketia' datatype='integer' name='[sp_strketia]' role='measure' type='quantitative' />
+      <column caption='Sp Strketia Index' datatype='real' name='[sp_strketia_index]' role='measure' type='quantitative' />
+      <column caption='State' datatype='integer' name='[state]' role='measure' type='quantitative' />
+      <column caption='State Index' datatype='real' name='[state_index]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/louis/Documents/My Tableau Repository/Datasources/annual_cost_predictions (cms.annual_cost_predictions) (cms).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/12/2020 11:05:52 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='annual_cost_predictions (cms.annual_cost_predictions) (cms)' increment-value='%null%' refresh-type='create' rows-inserted='660075' timestamp-start='2020-03-12 23:05:52.120' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>annual_cost</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[annual_cost]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>annual_cost</remote-alias>
+              <ordinal>0</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>467</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>patient_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[patient_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>patient_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>660075</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>age_yrs</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[age_yrs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age_yrs</remote-alias>
+              <ordinal>2</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>84774</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>3</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>race</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[race]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>race</remote-alias>
+              <ordinal>4</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>state</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>state</remote-alias>
+              <ordinal>5</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>52</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dx</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[dx]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dx</remote-alias>
+              <ordinal>6</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>px</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[px]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>px</remote-alias>
+              <ordinal>7</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>hcpcs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[hcpcs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>hcpcs</remote-alias>
+              <ordinal>8</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sp_alzhdmta</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sp_alzhdmta]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sp_alzhdmta</remote-alias>
+              <ordinal>9</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sp_chf</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sp_chf]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sp_chf</remote-alias>
+              <ordinal>10</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sp_chrnkidn</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sp_chrnkidn]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sp_chrnkidn</remote-alias>
+              <ordinal>11</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sp_cncr</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sp_cncr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sp_cncr</remote-alias>
+              <ordinal>12</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sp_copd</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sp_copd]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sp_copd</remote-alias>
+              <ordinal>13</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sp_depressn</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sp_depressn]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sp_depressn</remote-alias>
+              <ordinal>14</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sp_diabetes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sp_diabetes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sp_diabetes</remote-alias>
+              <ordinal>15</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sp_ischmcht</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sp_ischmcht]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sp_ischmcht</remote-alias>
+              <ordinal>16</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sp_osteoprs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sp_osteoprs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sp_osteoprs</remote-alias>
+              <ordinal>17</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sp_ra_oa</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sp_ra_oa]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sp_ra_oa</remote-alias>
+              <ordinal>18</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sp_strketia</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sp_strketia]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sp_strketia</remote-alias>
+              <ordinal>19</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender_index</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[gender_index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender_index</remote-alias>
+              <ordinal>20</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>race_index</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[race_index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>race_index</remote-alias>
+              <ordinal>21</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>state_index</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[state_index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>state_index</remote-alias>
+              <ordinal>22</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>52</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sp_alzhdmta_index</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[sp_alzhdmta_index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sp_alzhdmta_index</remote-alias>
+              <ordinal>23</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sp_chf_index</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[sp_chf_index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sp_chf_index</remote-alias>
+              <ordinal>24</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sp_chrnkidn_index</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[sp_chrnkidn_index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sp_chrnkidn_index</remote-alias>
+              <ordinal>25</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sp_cncr_index</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[sp_cncr_index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sp_cncr_index</remote-alias>
+              <ordinal>26</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sp_copd_index</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[sp_copd_index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sp_copd_index</remote-alias>
+              <ordinal>27</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sp_depressn_index</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[sp_depressn_index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sp_depressn_index</remote-alias>
+              <ordinal>28</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sp_diabetes_index</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[sp_diabetes_index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sp_diabetes_index</remote-alias>
+              <ordinal>29</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sp_ischmcht_index</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[sp_ischmcht_index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sp_ischmcht_index</remote-alias>
+              <ordinal>30</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sp_osteoprs_index</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[sp_osteoprs_index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sp_osteoprs_index</remote-alias>
+              <ordinal>31</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sp_ra_oa_index</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[sp_ra_oa_index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sp_ra_oa_index</remote-alias>
+              <ordinal>32</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sp_strketia_index</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[sp_strketia_index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sp_strketia_index</remote-alias>
+              <ordinal>33</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>features</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[features]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>features</remote-alias>
+              <ordinal>34</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>660075</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>prediction</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[prediction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>prediction</remote-alias>
+              <ordinal>35</ordinal>
+              <family>annual_cost_predictions</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>660075</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.104132' measure-ordering='alphabetic' measure-percentage='0.895868' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='annual_cost' />
+        <field-sort-custom-order field='patient_id' />
+        <field-sort-custom-order field='age_yrs' />
+        <field-sort-custom-order field='Calculation_916904765290094592' />
+        <field-sort-custom-order field='gender' />
+        <field-sort-custom-order field='race' />
+        <field-sort-custom-order field='state' />
+        <field-sort-custom-order field='dx' />
+        <field-sort-custom-order field='px' />
+        <field-sort-custom-order field='hcpcs' />
+        <field-sort-custom-order field='sp_alzhdmta' />
+        <field-sort-custom-order field='sp_chf' />
+        <field-sort-custom-order field='sp_chrnkidn' />
+        <field-sort-custom-order field='sp_cncr' />
+        <field-sort-custom-order field='sp_copd' />
+        <field-sort-custom-order field='sp_depressn' />
+        <field-sort-custom-order field='sp_diabetes' />
+        <field-sort-custom-order field='sp_ischmcht' />
+        <field-sort-custom-order field='sp_osteoprs' />
+        <field-sort-custom-order field='sp_ra_oa' />
+        <field-sort-custom-order field='sp_strketia' />
+        <field-sort-custom-order field='gender_index' />
+        <field-sort-custom-order field='race_index' />
+        <field-sort-custom-order field='state_index' />
+        <field-sort-custom-order field='sp_alzhdmta_index' />
+        <field-sort-custom-order field='sp_chf_index' />
+        <field-sort-custom-order field='sp_chrnkidn_index' />
+        <field-sort-custom-order field='sp_cncr_index' />
+        <field-sort-custom-order field='sp_copd_index' />
+        <field-sort-custom-order field='sp_depressn_index' />
+        <field-sort-custom-order field='sp_diabetes_index' />
+        <field-sort-custom-order field='sp_ischmcht_index' />
+        <field-sort-custom-order field='sp_osteoprs_index' />
+        <field-sort-custom-order field='sp_ra_oa_index' />
+        <field-sort-custom-order field='sp_strketia_index' />
+        <field-sort-custom-order field='features' />
+        <field-sort-custom-order field='prediction' />
+      </field-sort-info>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Age'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Sum of Predicted Cost by Patient Age</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='annual_cost_predictions (cms.annual_cost_predictions) (cms)' name='federated.1vubyr4102fdwb1h4umjv18mmhl2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vubyr4102fdwb1h4umjv18mmhl2'>
+            <column caption='Rounded Age' datatype='integer' name='[Calculation_916904765290094592]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOOR([age_yrs])' />
+            </column>
+            <column caption='Age Yrs' datatype='real' name='[age_yrs]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_916904765290094592]' derivation='None' name='[none:Calculation_916904765290094592:qk]' pivot='key' type='quantitative' />
+            <column caption='Prediction' datatype='real' name='[prediction]' role='measure' type='quantitative' />
+            <column-instance column='[prediction]' derivation='Sum' name='[sum:prediction:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f17b79' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1vubyr4102fdwb1h4umjv18mmhl2].[sum:prediction:qk]</rows>
+        <cols>[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:Calculation_916904765290094592:qk]</cols>
+      </table>
+      <simple-id uuid='{1E37C747-EF69-4381-98D2-BAE3A4531997}' />
+    </worksheet>
+    <worksheet name='Chronic Conditions - Median'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Median Cost by Chronic Condition</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='annual_cost_predictions (cms.annual_cost_predictions) (cms)' name='federated.1vubyr4102fdwb1h4umjv18mmhl2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vubyr4102fdwb1h4umjv18mmhl2'>
+            <column-instance column='[prediction]' derivation='Median' name='[med:prediction:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sp_alzhdmta]' derivation='None' name='[none:sp_alzhdmta:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sp_chf]' derivation='None' name='[none:sp_chf:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sp_chrnkidn]' derivation='None' name='[none:sp_chrnkidn:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sp_depressn]' derivation='None' name='[none:sp_depressn:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sp_diabetes]' derivation='None' name='[none:sp_diabetes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sp_ischmcht]' derivation='None' name='[none:sp_ischmcht:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sp_osteoprs]' derivation='None' name='[none:sp_osteoprs:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sp_ra_oa]' derivation='None' name='[none:sp_ra_oa:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sp_strketia]' derivation='None' name='[none:sp_strketia:qk]' pivot='key' type='quantitative' />
+            <column caption='Prediction' datatype='real' name='[prediction]' role='measure' type='quantitative' />
+            <column caption='Sp Alzhdmta' datatype='integer' name='[sp_alzhdmta]' role='measure' type='quantitative' />
+            <column caption='Sp Chf' datatype='integer' name='[sp_chf]' role='measure' type='quantitative' />
+            <column caption='Sp Chrnkidn' datatype='integer' name='[sp_chrnkidn]' role='measure' type='quantitative' />
+            <column caption='Sp Depressn' datatype='integer' name='[sp_depressn]' role='measure' type='quantitative' />
+            <column caption='Sp Diabetes' datatype='integer' name='[sp_diabetes]' role='measure' type='quantitative' />
+            <column caption='Sp Ischmcht' datatype='integer' name='[sp_ischmcht]' role='measure' type='quantitative' />
+            <column caption='Sp Osteoprs' datatype='integer' name='[sp_osteoprs]' role='measure' type='quantitative' />
+            <column caption='Sp Ra Oa' datatype='integer' name='[sp_ra_oa]' role='measure' type='quantitative' />
+            <column caption='Sp Strketia' datatype='integer' name='[sp_strketia]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_alzhdmta:qk]' scope='cols' value='Alzheimer&apos;s' />
+            <format attr='title' class='0' field='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_chf:qk]' scope='cols' value='Heart Failure' />
+            <format attr='title' class='0' field='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_chrnkidn:qk]' scope='cols' value='Kidney Disease' />
+            <format attr='title' class='0' field='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_depressn:qk]' scope='cols' value='Depression' />
+            <format attr='title' class='0' field='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_diabetes:qk]' scope='cols' value='Diabetes' />
+            <format attr='title' class='0' field='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_ischmcht:qk]' scope='cols' value='Heart Disease' />
+            <format attr='title' class='0' field='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_ra_oa:qk]' scope='cols' value='Arthritis' />
+            <format attr='title' class='0' field='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_osteoprs:qk]' scope='cols' value='Osteoperosis' />
+            <format attr='title' class='0' field='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_strketia:qk]' scope='cols' value='Stroke' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f9a655' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_alzhdmta:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f9a655' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_chf:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f9a655' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_chrnkidn:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f9a655' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_depressn:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f9a655' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_diabetes:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f9a655' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_ischmcht:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f9a655' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='10' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_ra_oa:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f9a655' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='11' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_strketia:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f9a655' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='13' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_osteoprs:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f9a655' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1vubyr4102fdwb1h4umjv18mmhl2].[med:prediction:qk]</rows>
+        <cols>([federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_alzhdmta:qk] + ([federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_chf:qk] + ([federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_chrnkidn:qk] + ([federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_depressn:qk] + ([federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_diabetes:qk] + ([federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_ischmcht:qk] + ([federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_osteoprs:qk] + ([federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_ra_oa:qk] + [federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_strketia:qk]))))))))</cols>
+      </table>
+      <simple-id uuid='{6F7C6A3F-81F2-4838-9A42-09E45CBAA988}' />
+    </worksheet>
+    <worksheet name='Chronic Conditions - Sum'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Sum of Predicted Cost by Chronic Condition</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='annual_cost_predictions (cms.annual_cost_predictions) (cms)' name='federated.1vubyr4102fdwb1h4umjv18mmhl2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vubyr4102fdwb1h4umjv18mmhl2'>
+            <column-instance column='[sp_alzhdmta]' derivation='None' name='[none:sp_alzhdmta:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sp_chf]' derivation='None' name='[none:sp_chf:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sp_chrnkidn]' derivation='None' name='[none:sp_chrnkidn:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sp_depressn]' derivation='None' name='[none:sp_depressn:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sp_diabetes]' derivation='None' name='[none:sp_diabetes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sp_ischmcht]' derivation='None' name='[none:sp_ischmcht:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sp_osteoprs]' derivation='None' name='[none:sp_osteoprs:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sp_ra_oa]' derivation='None' name='[none:sp_ra_oa:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sp_strketia]' derivation='None' name='[none:sp_strketia:qk]' pivot='key' type='quantitative' />
+            <column caption='Prediction' datatype='real' name='[prediction]' role='measure' type='quantitative' />
+            <column caption='Sp Alzhdmta' datatype='integer' name='[sp_alzhdmta]' role='measure' type='quantitative' />
+            <column caption='Sp Chf' datatype='integer' name='[sp_chf]' role='measure' type='quantitative' />
+            <column caption='Sp Chrnkidn' datatype='integer' name='[sp_chrnkidn]' role='measure' type='quantitative' />
+            <column caption='Sp Depressn' datatype='integer' name='[sp_depressn]' role='measure' type='quantitative' />
+            <column caption='Sp Diabetes' datatype='integer' name='[sp_diabetes]' role='measure' type='quantitative' />
+            <column caption='Sp Ischmcht' datatype='integer' name='[sp_ischmcht]' role='measure' type='quantitative' />
+            <column caption='Sp Osteoprs' datatype='integer' name='[sp_osteoprs]' role='measure' type='quantitative' />
+            <column caption='Sp Ra Oa' datatype='integer' name='[sp_ra_oa]' role='measure' type='quantitative' />
+            <column caption='Sp Strketia' datatype='integer' name='[sp_strketia]' role='measure' type='quantitative' />
+            <column-instance column='[prediction]' derivation='Sum' name='[sum:prediction:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_alzhdmta:qk]' scope='cols' value='Alzheimer&apos;s' />
+            <format attr='title' class='0' field='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_chf:qk]' scope='cols' value='Heart Failure' />
+            <format attr='title' class='0' field='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_chrnkidn:qk]' scope='cols' value='Kidney Disease' />
+            <format attr='title' class='0' field='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_depressn:qk]' scope='cols' value='Depression' />
+            <format attr='title' class='0' field='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_diabetes:qk]' scope='cols' value='Diabetes' />
+            <format attr='title' class='0' field='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_ischmcht:qk]' scope='cols' value='Heart Disease' />
+            <format attr='title' class='0' field='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_ra_oa:qk]' scope='cols' value='Arthritis' />
+            <format attr='title' class='0' field='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_osteoprs:qk]' scope='cols' value='Osteoperosis' />
+            <format attr='title' class='0' field='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_strketia:qk]' scope='cols' value='Stroke' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f9a655' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_alzhdmta:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f9a655' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_chf:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f9a655' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_chrnkidn:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f9a655' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_depressn:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f9a655' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_diabetes:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f9a655' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_ischmcht:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f9a655' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='10' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_ra_oa:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f9a655' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='11' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_strketia:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f9a655' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='13' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_osteoprs:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f9a655' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1vubyr4102fdwb1h4umjv18mmhl2].[sum:prediction:qk]</rows>
+        <cols>([federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_alzhdmta:qk] + ([federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_chf:qk] + ([federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_chrnkidn:qk] + ([federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_depressn:qk] + ([federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_diabetes:qk] + ([federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_ischmcht:qk] + ([federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_osteoprs:qk] + ([federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_ra_oa:qk] + [federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_strketia:qk]))))))))</cols>
+      </table>
+      <simple-id uuid='{229232C3-B14F-4EE0-B5A2-F3F630A2B11E}' />
+    </worksheet>
+    <worksheet name='Race'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Median Cost by Race</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='annual_cost_predictions (cms.annual_cost_predictions) (cms)' name='federated.1vubyr4102fdwb1h4umjv18mmhl2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vubyr4102fdwb1h4umjv18mmhl2'>
+            <column-instance column='[prediction]' derivation='Median' name='[med:prediction:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[race]' derivation='None' name='[none:race:qk]' pivot='key' type='quantitative' />
+            <column caption='Prediction' datatype='real' name='[prediction]' role='measure' type='quantitative' />
+            <column caption='Race' datatype='integer' name='[race]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#75a1c7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1vubyr4102fdwb1h4umjv18mmhl2].[med:prediction:qk]</rows>
+        <cols>[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:race:qk]</cols>
+      </table>
+      <simple-id uuid='{CE99102E-F913-4CCE-B577-43E0FF4D99A1}' />
+    </worksheet>
+    <worksheet name='State'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Median Cost by State</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='annual_cost_predictions (cms.annual_cost_predictions) (cms)' name='federated.1vubyr4102fdwb1h4umjv18mmhl2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vubyr4102fdwb1h4umjv18mmhl2'>
+            <column-instance column='[prediction]' derivation='Median' name='[med:prediction:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[state]' derivation='None' name='[none:state:qk]' pivot='key' type='quantitative' />
+            <column caption='Prediction' datatype='real' name='[prediction]' role='measure' type='quantitative' />
+            <column caption='State' datatype='integer' name='[state]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#72b966' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1vubyr4102fdwb1h4umjv18mmhl2].[med:prediction:qk]</rows>
+        <cols>[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:state:qk]</cols>
+      </table>
+      <simple-id uuid='{ED987298-BD74-4083-9893-423D006987FF}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='6' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='5' param='vert' type='layout-flow' w='98400' x='800' y='1000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8CDDC76D-1737-4190-8172-3E58F3E23373}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{38AFF386-5131-48C4-AC17-2C1149E7E074}' />
+    </window>
+    <window class='worksheet' name='State'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{78F39C32-41EF-4C2E-95EA-FCBA0282E10D}' />
+    </window>
+    <window class='worksheet' name='Race'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{626D92A3-C4A3-4D52-B345-A82A37B82463}' />
+    </window>
+    <window class='worksheet' name='Chronic Conditions - Median'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_osteoprs:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{64AFCD7E-FCDA-41F5-95F5-ED9A77E8BCB4}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Chronic Conditions - Sum'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1vubyr4102fdwb1h4umjv18mmhl2].[none:sp_osteoprs:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D4397E02-F9CA-4DEB-B3C6-2E4C740F83DC}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{0CFAC757-59F3-4464-AF22-87AD92236E99}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Age' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Chronic Conditions - Median' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAYJ0lEQVR4nO2d228bV37HvzPDOyVSF+ou6x5Llhx4nciwg0TZ3RiLArstWiz2YdG3Im9F
+      X4q+9T/oU4H2pcUCfWlfFlu0QAMjwXqT3WTXie+2LNkSL6Z1F++kRFK8zZzTB4W0LqQ4Q5G6
+      ze8DBLHIM2e+c2a+nJlzvnNG4JxzEIROEU9bAEGcJoZGryAej6suWzwZCYKgurzasgDAGIMo
+      qve8lvrPmhZAfTvqScvBsg03AAC0traqKqcoCgRBUN0AhUIBRqNRtY54PK5aC+cciqLAYFDX
+      RI3UorV+re3YSC2MMTDGVLdjI7XIsgxJkvaZgC6BCF1DBiB0jWYDcM6xtbUFzjlisRji8Tgy
+      mQyi0SgYYwiFQigUCo3QShB1R7MB0uk0ZmdnwTlHJpPBq1evsLi4iGAwiIWFBSSTSfh8vkZo
+      JYi6o/kmuKmpCW1tbRAEAVtbWxgcHEQsFkN7ezt8Ph/ee+89+Hy+0s2PoiiqzwiMMQiCoPqu
+      XlEUTdq1aCnqUTtM0mgtWuqvpR0bpYVzXvrvtLWU25+aDbC9vY1YLIZAIIBQKASj0QiTyYTV
+      1VVcvnwZc3Nz6OvrgyiKEEURkiQ1rPcCgKaeFy1atPYCNVKL1vq1tmMjtWjtBWqklnK9QJoN
+      4HA48PHHHwMAenp6AOzv63W5XFqrJIhToy7jAHsdpWUwiCBOG+oGJXQNGYDQNWQAQteQAQhd
+      QwYgdA0ZgNA1ZABC15ABCF1TUxo0kUgAAHZ2dpDL5bCzs4NIJALGGILBIKVBiXNDTWnQFy9e
+      gHOO5eVlBAIBuN1uhEIhvHr1CqlUCl6vtxFaCaLuHCsN2t/fj1gsBkmSSmnQkZERvH79mtKg
+      ddZCadDja6lrGjQYDCIcDiObzaKpqamUBp2fn6c0aJ21aK2f0qDlqXsatKurCwClQYnzC6VB
+      CV1D3aCEriEDELqGDEDoGjIAoWvIAISuIQMQuoYMQOgaMgCha2pOg3LOEY/HkUwm96VBA4EA
+      pUGJc4PmkeB0Oo25uTl88MEH8Pv9AABRFGGxWBAIBGCz2RCLxTA5OVl3sQRRb2pKg7a2toJz
+      DpvNVvq1b2trozRoA7VQGvT4WuqaBo3FYshkMjCZTDAajfvSoP39/ZQGraMWrfVTGrQ8dU+D
+      dnZ27vuO0qDEeeNYadByp1hKg9YPnk+Bh927fygKmCQB1laIbSOnK+wCcSIvySNqg29vQP7m
+      n0p/ywDEgQ8gfvj3pyfqgkHjAISuIQMQuoYMQOgaMgCha8gAhK4hAxC6hgxA6JqaDcA5Rzgc
+      LqVBw+EwGGPY3NykNChxbqh5IKxQKGBlZQXA2zRoMBiE3W6H1+ulNChxLqjZAAaDoXQW6Ovr
+      ozRoI7SUqZMxVnU5SoOWpy5p0CKCIKC5uRlNTU0QBAGrq6sYHx+nNGgdtTBJgnzgM1EUYaiy
+      HKVBy1OXNGgRQRBw+fLlQ5+1t7drrktZ+D8or/4XKJpTAKT3/gbS8Me1yiMIVZyNNKiSB/Lp
+      /Z8xupEmGg91gxK6hgxA6BoyAKFr6IGYA3ClAMjZ3e4yxsAVCZBMEAzm05Z2qvB8GvK9f979
+      N+coCAKE5h4Ypj89ZWXHgwxwALZ6H8p3//r2bwDi5F/BcO2vT0/UWYAp4IEXpT85AORSpyan
+      XtAlEKFryACEriEDELqm5nsAxhgWFxdhNBphs9mQSCQwNDQEn8+HgYEBtLa21lMnQTSEmg3A
+      OUcoFILRaERTUxM6OjowNzeHqakpLC0twel0gnNeCsQdBWOHg1KM8bJhsP1lqtettTxnrMxn
+      XMU2nJAWXl2LoigQRVF1AE2dlsPfc1TXovYY0KKl1vLs+/asSxaIMQan0wlFUfYFx4pJvuJK
+      1KQSBeFtDGjvZ9WXU594VFuel413nI4WVPherRa1etTtIwGH7agu+lJvLcep+2BA8FhxaLvd
+      DpPJBJvNhng8jnfffRderxfDw8P7dkK1VGL5g676clqTo7VqwSlpYTW2C+dckx517XL4ewEq
+      tuH7aHY9tQBA/rO/AwpZALsThsFog+kv/kWVloakQYvzhF69erXWKglCPdkkIGfe/l3mEk0N
+      1AtE6BoyAKFryACEriEDELrmSAMU+1jV9icTxHmjogFyuRx+/etf44svvsDOzs5JaiKIE6Oi
+      AURRRDabpV9/4kJT0QCSJGFkZASSJEGSpJPURBAnRkUD5PN5JBIJmEwmxGKxk9REECdGxZHg
+      TCaDjo4OJJPJsnP9FNOg2WwWnZ2d2NraojQoce6oaIBcLgeLxQKz2Yx8Pg+zef8zsaIo4vLl
+      y3j58iWi0Sg6OzvrnAZlp5IGZZQGraDlbKZB96pRu29VZYESiQTu3bsHl8uFgYEBNDc3Hyqz
+      tLSEwcFBLC0toVAo1DkNqi6hWO/koCgIONiM5y0NKoqibtKgWrRoSoMODg7iww8/RFdXFywW
+      S9kyTqcTLS0t6O3tvTBpUIXSoOXrPGNp0DJLqtay1ygVlzAajfD7/bh37x5k+eAUrbt0dHQA
+      2E2Cjo+Pw2w24+rVq2hqaqphAwji5KloAL/fj5aWFpjNZphMppPURBAnRkUDJBIJMMZgtVpr
+      viYjiLNORQNcuXIFsiyjpaUF8Xj8JDURxIlR0QDNzc1wOBzY3NyEy+U6SU0EcWJUNEA2m8Xr
+      16+RyWQQjUZPUhNBnBhH9gK1t7dDkiS0tbWdpCaCODEqGoBzjkgkgqmpqRr7ZQni7FPxyI7H
+      42htbT30UjGCuEhUNMDvf/97pNNpBAKBipmSYs6j+H+gfJaGIM4qFaMQH330Eba2tiouyBjD
+      8+fP0d7ejmQyiWw2i56enlKv0dDQUCP0EkRdqWiAnp4eRCIRpFKpsr/qiqIgEAiAMQaz2YyB
+      gQF4PB68//778Pl8ml6UXS71yBQGVmW5xrycuowWFS+nvvAvyi4Th+Hg1fdtg1+UvVeNmnZR
+      /aLsXC6HN2/e4P333y/7kmNRFNHe3g5ZliGKIlZXV9HV1QWPxwOLxaLpRdmKKB5KYIqSCEnF
+      C5Dr/XJqRSqjRcXLqRuh5Sy9KJsrBhw8vAQI1behQS/Kzh/6pLoWTS/KNhqNcDgcePHiBdra
+      2g5tgCiKuHbtGjjnpRi01WpFOp2GzWarugEEcRaoaABZljE7OwtBEDA9PX3ooBYEYV9Muug+
+      SoIS54mK50iDwYAf//jH6O7upofiiQtLRQO8fv0akUgEdru94gMxBHHeqXgJFAwGEQwGYTAY
+      Kj4QQxDnnYpngJs3b8JsNqO5uRnpdPokNRHEiXFkGK6rqwsGg4HCcMSF5cg49PLyMjY3N2li
+      LOLCUvEeoFAooL+/H6lUih6IIS4sFc8AX331Febm5qAoSo0TFRHE2aeiAW7fvo3r168jEAio
+      yntQGpQ4j1S8BLp79y4SiQR6enrKDoQxxvDgwQN0d3cjnU4jm82iu7sbgUCA0qAE2OoDyM//
+      C/g+fJYXBEjv/BmkiT8/ZWX7qWiAn//851UXliQJ29vbEEWR0qCUBt1PLg2kgvvXk02q2qdn
+      Ig2qhpaWFkQiEVgsFqysrKCrqwtutxtWq7WhaVAWfQ0UdgBFKZ2dhI4JCNLR66E0aO1atKZB
+      FUmqqR3PTBq0GoIg4NKlSxgaGoIoisjn87BardjZ2YHVaq21WlUoT/4DPOoFgNIBYvzLfwNs
+      NF5BaONYBth7oBfj0na7/fiqCOKEoOkeCF1DBiB0DRmA0DVkAELXkAEIXUMGIHQNGYDQNWQA
+      QtccywB7Z/2iNChxHjlWFigYDGJ5eRl2u53SoMS5pGYDyLKMlZUVmEwmcM5PNA1abp5JWZGB
+      eiQNKQ1aHq1p0Bq1n5s0KGMMDocD6+vrcDqdpTTo4uIibDZbQ9OgBUE49GZ5g2SAUIekIaVB
+      y0Np0AOYTCaMj4/jnXfeAee77rNYLMhkMrqaSEt++O9gK98CHMh/366GH/0jRNf46QojVHGs
+      ewBBEEp5/GIaVHcT48o5oJDZ/xl1BJwbjmUAgjgPcM52H83kDODC7lOagghBEMgAFwnOZIAp
+      4IoCQRTBmQCIBgiivic3Vp79J5j7DgCgeG42fPQPEC7dJANcJJT5/wF7+d8A3u5o6ebfQhr5
+      0WlJOvPQSDCha8gAhK4hAxC6hgxA6BoyAKFrjmWAYraC0qDEeeVYWSC3243t7W3YbLZDadDh
+      4eF66iSIhlCzAURRhMlkQjabhc1mw+DgIDweD6anp+H1enWTBi2nRVEUKHXRoi1RyVm58kp9
+      5uM8x2nQcsdXcR/VbIC97w0oFApYXl5Gd3c3Xr16Bbvdrps0qCwIONi8kiRBrIMWrWlQWZQO
+      aRFFqWI7atFyntOgsihW3EfHOgP09/eX5gaVZRlms1l3aVDifHOsuUH3Jj91mwYlzjXUDUro
+      GjIAoWvIAISuIQMQuoYMQOgaMgCha8gAhK4hAxC6pmYDcM4RCoUQiUSQSqUQDAahKArW19eR
+      zx8eqCaIs8ixHornnMPj8cBqtcJmsyEYDMLpdMLn82FycrJeGgmiYRzLAKFQCMPDwwiHw2hp
+      aYHP58PY2Bi2t7cpDUpp0DJaLlAalDGGRCIBi8UCi8WCtbU1TExMYH5+HpcuXaI0KKVBL3Ya
+      VJIkzMzMAHj7KygIAtra6G3txPmhLhNj7Z1tV+2U3ARxFqBuUELXkAEIXUMGIHQNGYDQNWQA
+      QteQAQhdQwYgdA0ZgNA1xzJAKpVCNptFKpVCIBCAoihYW1ujNChxbqh5JJhzjvX1dVgsFsRi
+      MdjtdoRCoVIojtKgxHngWBNj9fb2IhaLQZIkOJ1OhMNhjI2NYWtri9KglAYto+WCpUFXVlaQ
+      zWbR3NxMadAD66E06AVPg4qiiKmpKQCUBiXOL5QGJXQNdYMSuoYMQOgaMgCha8gAhK4hAxC6
+      pq4GYIwhHA5DLjNoQhBnkboaYH19HYlEAl6vt57VEkTDqKsBstks+vv76QxAnBvqagCXy4W5
+      uTm0trbWs1qCaBh1GQku0traiunpaRoNJs4NAi8XZ6wDxTRoIBCA3W4/siyXc4CSA2ccEAQI
+      AgCDBYJkKl8+nwa4AsYYRHH3JCaYmgDh6BNaKpVCU1PT0VqUAiBnAL6bcRJEAZDMEAzm8uUL
+      GYAV9mmB0QZBPPq3RZUWpgCFNAC8rV80QjBay5ff046CIAACAIMVgnR0uEyNFnAGnk/t1yJI
+      EEzl963WdtSkBQDPJQHwPe0uQDA3ly8rZwElD8Y4xAPtUtczwF6KaVC73a76kkhRFAiC8PZA
+      qshufbIsl95PrBa1WjjfbVxJkk5Zi0tz/YqiQBRFTWdidVraNWtR345atWhv93Lt0jAD1EL1
+      A38/Whq1FrToabQWLfVrbUetaN3WRuo5brucyEBYoVAo++DIQbRcjXHOIcty1WU458jn86Vy
+      siyDlXlAotxyavVo1VJcvyzLUMo8OHJcLYqiqNJSKBRK61cURfU2aNFSvBSuhizLpd7D4oMz
+      arSoqbtYttz2NdwAkUgEc3NzmJ+fP7JcoVDAn/70JySTSVX1xmIxvHz5Eh6P58hy29vb8Hg8
+      WFhYwM7ODp4+fYrnz58fuQxjDLOzs1hfX1elJZVKwe12V603m83C7/fj6dOn4JzjwYMHePz4
+      cdX6vV4vFhcXVWnJ5XLweDx4+PDhkeVkWYbf7y+Ve/LkCR4/fly1C3t1dbXqdhZhjMHj8eDb
+      b7+tWtbv9+PevXsAgNnZWTx//hypVOrIZcLhMB48eKBKSzabhdfrPdTeDTdAPB5X9Xyw0WjE
+      4OCg6nodDgfy+Tz6+vqOLNfU1IREIgGz2YxMJoP+/v6qTxyJooiRkRHVWux2O3K5HAYGBo4s
+      Z7VakU6nYTKZSttgs9mq1j88PKz6VG82m8EYw6VLl44sZzQa9/0aWq1WdHR0VJ3QoK+vDxaL
+      RZUWURRhNBrR09NTtazFYimZz2AwYHR0FNvb20cu09nZCYfDoUqLxWJBoVA4tI8aboDOzk68
+      ePGi6o1KPp/H2toaNjY2VJ1ifT4fBEGousNisRicTiey2SzsdjtWV1ernjYZY1haWlKtZWNj
+      A5lMpuqzrNvb26UdAbydVaMaS0tLWF9fV3W6TyQSCIVCVS+tcrncvl/7fD6PSCQCs/noXpr1
+      9XVsbm6q0l0oFPD69euq5Tjn2N7eLh0jnHN4vd6qN8PBYBCbm5uqrhoikQji8fihM1zDukGL
+      xONxOBwOzb0S9aJ4TWwwGBCPx+F0OiEIwqmNVciyDEmSkEgkTl1LsVckkUigpaUFnPOG30Af
+      pUUQBGxtbaGlpUVzz1GtnEgv0ElsSCUEQdh39jmtHVzkLGnZu19O04jltJzUMUNxaELXkAEI
+      XXOqBkgmkwgGgwiHw8hkMgB2b1r3dn9xzrGxsXFkPZlMBvF4vCYNiqIgkUggkUhUvHFUFKV0
+      07e+vg63210qG4/HkUgkEAgEalp/kVgshp2dndJNHeccq6urRy6TSCTg8XiQz+exubmpuk9c
+      C4wxLCwsIBqNal5WlmUEg8G6awKAlZUVLC8vgzG27/hYWVnZVy6TyRzZLqc6EvzNN98gFAph
+      dHQUra2t8Pl8sFgsCAQC+OEPfwi3242BgQFsbW3B5/MhGo3CYDDgxo0b+O6773D9+nV4vV5Y
+      LBbYbDZsbGzg9u3bqroWi+zs7ODLL7+EKIq4ceMG7t+/j5mZGTx69AiXL19GIBBAIpHAysoK
+      Pv30U/zud7/DrVu34Pf74Xa7MTo6CoPBALfbjStXriCfzyOTySCfzyMajWJ8fBxjY2NVdXz+
+      +ecQRRFXr15FKpXC4uIitre30dXVBcYYhoaGsLi4iMHBQYyMjCAajcLj8UCSJDx9+hRDQ0MI
+      h8OIxWLo7OzE8vIypqam8OzZM8zMzOCPf/wjrl+/jidPnuDmzZvo7e1V1T6FQgFfffUVLBYL
+      PvnkEzx79gzT09N4/PgxJicnsbm5CZfLBZ/Ph+npaczOzmJiYgKvXr3C1NQUEokE5ufnYbfb
+      IQgCQqEQfvKTn6juSq3E3bt30dvbi2AwCMYY/H4/zGYznj59iv7+frz77rvw+/3wer2YnJwE
+      5xxGoxGCIIAxhlu3bgE4RQMUf1lyuRy6u7sxODiIZDKJjo4O9Pb24u7du9ja2kI0GoXJZNqd
+      yk5RcOnSJdy5cweyLOPBgwdQFAW/+MUv4PP5EAwGa5pWz+12gzEGWZaRyWTw8OFDpNNpfP31
+      15BlGT/96U9hsVhgNpuxs7ODhYUFdHd3Y3FxEYVCAaOjo8hkMvB6vUilUohGo7h58ybcbjd2
+      dnZUGSCZTIIxBs45vv32W/zgBz+A1+tFMBiEyWTC559/DqPRCLvdjq+//hq//OUvS4b57W9/
+      i7W1NTQ1NSGdTuP58+cwGo1wOp3Y2NgoDeoVCgWEw2G8ePFCtQEAoLu7Gw6HA3fu3IHNZsP9
+      +/fR19eHJ0+eIBqN4vr164hEInj48CGCwSA6OzuxurqK/v5++Hw+iKKItbU1GI1GdHR0IB6P
+      qxobOAqbzYYPPvgAX375JRhjsFqt8Hg86Onpgdlsxm9+8xsYjUb09vZibGwMv/rVr9Dd3Q2n
+      07kvnHlqBshms7h16xZaWlqwvLyMtbW1UteXy+XCxMQE3rx5g9HRURQKBQiCAM45Ojs7YbPZ
+      sLCwgJGREdhsNphMJlitVphMJmSzWTidTtU6JEnCJ598AlEU4XQ6cf/+ffT29mJ+fh49PT1w
+      uVzo7OzEd999h2w2i8nJSczMzOAPf/gDXC4XXC4Xmpqa0N/fj/n5eXR1deHKlSsYGxvD7Oys
+      6gG1iYkJtLa2IhaLYWJiAs+ePUNfXx/MZjMMBgNcLhfC4TBu3LiBR48eoaOjA06nE1988QWu
+      XbuGVCoFo9GIWCyGK1euYGtrC/l8Hg6HA3a7vbQdyWRS04CjKIrY3NyEKIq4ffs2njx5gu7u
+      bjx69Ag3b97E4OAgxsfH4ff7MTg4CFEUEY/H0dXVhXQ6jYGBAbx58wYOhwPt7e1obW2tOtag
+      Vtdnn32Gn/3sZ5ibm8P6+jp6e3ths9kQDocxMzODQCCAgYEBeDwejI2NweVywWAw7LssO5Fx
+      gFofkNk75WK17/ZuRqXuPDVaOOcls+2tp9L6DpY5ahktWg7WVfxsdXUViqJgeHi47DLl2Ls9
+      5TRp2Uecc8TjcWSzWfT09JRt/3LrPrjOStR6vJTbvoOfHdQFnLE06EGOarCD39WrD7tYT7X6
+      y62vnpoq1X9U3EJNex23nSrN/6plXzWCctunZpv/H+TylR6/iJ3wAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Chronic Conditions - Sum' width='192'>
+      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
+      bqgIvwYsAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Race' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='State' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

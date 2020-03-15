@@ -1,6 +1,6 @@
 # Copy commands for Lambda functions to insert data into Redshift
 
-Beneficiary Summary
+--Beneficiary Summary--
 set search_path to cms; 
 begin; 
 delete from cms.beneficiary_summary; 
@@ -10,7 +10,7 @@ IAM_ROLE 'arn:aws:iam::799687528413:role/RedshiftDWS3FullAccess'
 FORMAT AS PARQUET; 
 commit;
 
-Inpatient Claims
+--Inpatient Claims--
 set search_path to cms; 
 begin; 
 delete from cms.inpatient_claims; 
@@ -20,7 +20,7 @@ IAM_ROLE 'arn:aws:iam::799687528413:role/RedshiftDWS3FullAccess'
 FORMAT AS PARQUET; 
 commit;
 
-Outpatient Claims
+--Outpatient Claims--
 set search_path to cms; 
 begin; 
 delete from cms.outpatient_claims; 
@@ -30,7 +30,7 @@ IAM_ROLE 'arn:aws:iam::799687528413:role/RedshiftDWS3FullAccess'
 FORMAT AS PARQUET; 
 commit;
 
-Prescription Drug Events
+--Prescription Drug Events--
 set search_path to cms; 
 begin; 
 delete from cms.prescription_drug_events; 
@@ -40,7 +40,7 @@ IAM_ROLE 'arn:aws:iam::799687528413:role/RedshiftDWS3FullAccess'
 FORMAT AS PARQUET; 
 commit;
 
-Annual Cost Predictions
+--Annual Cost Predictions--
 set search_path to cms; 
 begin; 
 delete from cms.annual_cost_predictions; 

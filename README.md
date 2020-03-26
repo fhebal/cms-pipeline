@@ -6,17 +6,15 @@ The purpose of this project is to develop and deploy a scalable system for the d
 * Build, train machine learning models and deploy them into production environment.
 
 
-
 ## System Architecture
-
-![Image of Architecture](https://i.ibb.co/rsQyYSj/CMS-Pipeline.png)
-
 * End to end pipeline is fully automated with a near serverless architecture
 * Automation is implemented with a series of Amazon Lambda functions that starts with an initial function that is scheduled
 to trigger on regular intervals using Amazon CloudWatch. Once the scheduled function triggers, a sequence of functions trigger,
 which runs the end to end pipeline from data ingestion, machine learning, and loading to Amazon Redshift.
 * Each script used for data ingestion, processing, loading, and machine learning are containerized within Docker images.
 * EC2 instances containing Docker images are set to start and stop through triggered Lambda functions for cost efficiency.
+
+![Image of Architecture](https://i.ibb.co/rsQyYSj/CMS-Pipeline.png)
 
 ## Project goals (MSDS 436 - Course Objectives)
 * Select appropriate infrastructure for large data processing, storage and analytics.

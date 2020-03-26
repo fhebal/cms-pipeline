@@ -5,6 +5,19 @@ The purpose of this project is to develop and deploy a scalable system for the d
 * Connecting to databases, analyzing the data and deriving valuable insights using Spark.
 * Build, train machine learning models and deploy them into production environment.
 
+
+
+## System Architecture
+
+![Image of Architecture](https://i.ibb.co/rsQyYSj/CMS-Pipeline.png)
+
+* End to end pipeline is fully automated with a near serverless architecture
+* Automation is implemented with a series of Amazon Lambda functions that starts with an initial function that is scheduled
+to trigger on regular intervals using Amazon CloudWatch. Once the scheduled function triggers, a sequence of functions trigger,
+which runs the end to end pipeline from data ingestion, machine learning, and loading to Amazon Redshift.
+* Each script used for data ingestion, processing, loading, and machine learning are containerized within Docker images.
+* EC2 instances containing Docker images are set to start and stop through triggered Lambda functions for cost efficiency.
+
 ## Project goals (MSDS 436 - Course Objectives)
 * Select appropriate infrastructure for large data processing, storage and analytics.
 * Process data and architect an end-to-end pipeline in a cloud environment.
@@ -17,17 +30,6 @@ The purpose of this project is to develop and deploy a scalable system for the d
 * Modular: components are modular/isolated to ensure use-case/stack flexibility
 * Automated: maximal steps from ingestion to deployment are automated
 * Modern stack: Technology must be modern, useful, and widely adopted
-
-## System Architecture
-
-![Image of Architecture](https://i.ibb.co/rsQyYSj/CMS-Pipeline.png)
-
-* End to end pipeline is fully automated with a near serverless architecture
-* Automation is implemented with a series of Amazon Lambda functions that starts with an initial function that is scheduled
-to trigger on regular intervals using Amazon CloudWatch. Once the scheduled function triggers, a sequence of functions trigger,
-which runs the end to end pipeline from data ingestion, machine learning, and loading to Amazon Redshift.
-* Each script used for data ingestion, processing, loading, and machine learning are containerized within Docker images.
-* EC2 instances containing Docker images are set to start and stop through triggered Lambda functions for cost efficiency.
 
 ## Data Ingestion, Analysis, and Preparation
 * Amazon Lambda functions were used for automation.

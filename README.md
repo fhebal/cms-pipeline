@@ -5,8 +5,6 @@ The purpose of this project is to develop and deploy a scalable system for the d
 * Connecting to databases, analyzing the data and deriving valuable insights using Spark.
 * Build, train machine learning models and deploy them into production environment.
 
-![Image of ML Pipeline](https://github.com/fhebal/cms-pipeline/blob/master/ml_pipeline.png)
-
 ## Project goals (MSDS 436 - Course Objectives)
 * Select appropriate infrastructure for large data processing, storage and analytics.
 * Process data and architect an end-to-end pipeline in a cloud environment.

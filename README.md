@@ -15,7 +15,7 @@ which runs the end to end pipeline from data ingestion, machine learning, and lo
 * EC2 instances containing Docker images are set to start and stop through triggered Lambda functions for cost efficiency.
 
 ![Image of Architecture](https://i.ibb.co/rsQyYSj/CMS-Pipeline.png)
-![Magritte](https://upload.wikimedia.org/wikipedia/en/e/e5/Magritte_TheSonOfMan.jpg)
+
 ## Project goals (MSDS 436 - Course Objectives)
 * Select appropriate infrastructure for large data processing, storage and analytics.
 * Process data and architect an end-to-end pipeline in a cloud environment.
